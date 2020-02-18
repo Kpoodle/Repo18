@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.Kpoodle" name="Poodle Add-ons Repository" version="1.0.0" provider-name="Kpoodle">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Poodle Add-ons Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Kpoodle/Repo2/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Kpoodle/Repo2/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Kpoodle/Repo2/master/zips</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en"></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
