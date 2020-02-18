@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.1"
+       provider-name="Subs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+
+  </requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
