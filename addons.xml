@@ -442,6 +442,24 @@
 	</extension>
 </addon>
 
+<addon id="script.program.kodicleaner"
+  name="Kodi Cleaner"
+  version="10.3" 
+  provider-name="VistaTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">kodi cleaner Deletes pyo files and thumbnails.</summary>
+    <description lang="en">kodi cleaner Deletes pyo files and thumbnails.</description>
+	<disclaimer>kodi cleaner</disclaimer>
+  </extension>
+</addon>
+	
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
