@@ -339,7 +339,7 @@ FYI - our content is available only in Israel.
 	
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
-	   version="1.7.4"
+	   version="1.7.5"
 	   provider-name="Pavel Durov">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
