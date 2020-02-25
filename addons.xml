@@ -198,12 +198,13 @@ FYI - our content is available only in Israel.
 	
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.3.9"
+	   version="7.4.0"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
+
 	<import addon="script.module.pyxbmct" version="1.1.4" />
   </requires>
   <extension point="xbmc.python.pluginsource"
@@ -680,7 +681,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 	
-<addon id="service.subtitles.wizdom" name="Wizdom Subs" version="2.0.2" provider-name="Wizdom">
+<addon id="service.subtitles.wizdom" name="Wizdom Subs" version="2.0.4" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
