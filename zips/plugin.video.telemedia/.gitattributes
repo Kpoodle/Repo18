@@ -1,2 +1,0 @@
-Repo2 filter=lfs diff=lfs merge=lfs -text
-plugin.video.telemedia filter=lfs diff=lfs merge=lfs -text
