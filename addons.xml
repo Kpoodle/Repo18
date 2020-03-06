@@ -2,6 +2,23 @@
 
 <addons>
 
+<addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.11" provider-name="KodiMaster">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="KodiMaster Repository">
+            <info compressed="false">https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>KodiMaster Repository</summary>
+            <description>The KodiMaster Repository - Home of the KodiMaster Wizard. http://kodimaster.com</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.audio.eco99music" name="eco99music" version="0.0.5" provider-name="Nir Elbaz, Noam Stolero">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -436,7 +453,23 @@ FYI - our content is available only in Israel.
 		<platform>all</platform>
 	</extension>
 </addon>	
-	
+
+<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
+	<extension point="xbmc.addon.repository" name="L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Official Repository of Kodinerds</summary>
+		<summary lang="de">Offizielles Repository der Kodinerds</summary>
+		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
+		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.Kpoodle" name="Poodle Add-ons Repository" version="1.0.0" provider-name="Kpoodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -484,7 +517,27 @@ FYI - our content is available only in Israel.
         <news></news>
     </extension>
 </addon>
-	
+
+<addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="1.1" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
+	<dir>
+		<info compressed="false">http://mullafabz.xyz/Plugins/addons.xml</info>
+		<checksum>http://mullafabz.xyz/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mullafabz.xyz/Plugins/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All types of Contents</summary>
+		<description>Find any type of content</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
