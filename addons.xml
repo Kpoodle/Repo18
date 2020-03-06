@@ -19,6 +19,25 @@
     </extension>
 </addon>
 
+<addon id="nux007.repository"
+        name="Kodi Nux007 Repository"
+        version="0.0.4"
+        provider-name="Nux007">
+    <extension point="xbmc.addon.repository" name="Kodi Nux007 Repository">
+        <checksum>https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml.md5</checksum>
+        <info compressed="false">https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml</info>
+        <datadir zip="true">https://github.com/Nux007/kodi-nux007-repository/raw/master</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">Nux007 repo</summary>
+        <description lang="fr">Installer les addons Nux007</description>
+        <summary lang="en">Nux007 repository</summary>
+        <description lang="en">Install addons created by Nux007</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="plugin.audio.eco99music" name="eco99music" version="0.0.5" provider-name="Nir Elbaz, Noam Stolero">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -372,6 +391,19 @@ FYI - our content is available only in Israel.
     <description lang="he">Telegram media for kodi</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="repository.5star" name="Repository for 5Star Kodi addons" version="1.0.8" provider-name="Luis Rodrigues">
+    <extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons">
+        <info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/5-star/repository.5star/raw/master/zips/</datadir>
+    </extension> 
+    <extension point="xbmc.addon.metadata">
+        <summary>Repository for 5Star Kodi addons</summary>
+        <description>Repository for 5Star Kodi addons</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
