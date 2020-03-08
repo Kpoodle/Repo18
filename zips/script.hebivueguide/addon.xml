@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.4" provider-name="iVue Tv Guide">
+<addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
 		<import addon="plugin.video.idanplus" version="2.5.2"/>
+		<import addon="script.module.requests"/>
 		<import addon="script.module.xmltodict"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py"/>
