@@ -393,6 +393,23 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
+<addon id="plugin.video.Vodil" name="Vod IL" version="1.3.1" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה לצפיה בסרטונים מיוטיוב</summary>
+    <description lang="he">הרחבה לצפיה בתכנים מיוטיוב</description>
+    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.5star" name="Repository for 5Star Kodi addons" version="1.0.8" provider-name="Luis Rodrigues">
     <extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons">
         <info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
