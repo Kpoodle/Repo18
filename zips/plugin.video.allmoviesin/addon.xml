@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.5.4"
+	   version="7.5.7"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
