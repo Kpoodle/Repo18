@@ -442,7 +442,43 @@ FYI - our content is available only in Israel.
     <platform>all</platform>
   </extension>
 </addon>
-	
+
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.0" provider-name="Kodi free">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה תוכן, שירות ועזר.</summary>
+    <description lang="he">הרחבה משמשת לקיצורים להרחבות ישראליות.ובנוסף נותנת תוכן המוזרם דרך הרחבות יוטיוב</description>
+    <disclaimer lang="en">Kodi free</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.shadow"
+	   name="Shadow"
+	   version="1.0.7"
+	   provider-name="Darkness">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
+    <description lang="en">All the media as fast as possiable</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.3"
