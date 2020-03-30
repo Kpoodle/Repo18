@@ -269,7 +269,7 @@ FYI - our content is available only in Israel.
 	
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.5.7"
+	   version="7.5.9"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -462,7 +462,7 @@ FYI - our content is available only in Israel.
 
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="1.0.7"
+	   version="1.0.8"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -600,6 +600,30 @@ FYI - our content is available only in Israel.
 		<description>Download and install addons from the Coldkeys Repository</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.0" provider-name="Elementum Unofficial">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
+        <dir>
+            <info compressed="false">https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml</info>
+            <checksum>https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml.md5</checksum>
+            <datadir zip="true">https://wolf.seedhost.eu/kcat2/Repo/zips3/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en"></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
+    </extension>
 </addon>
 	
 <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.0" provider-name="Fishenzon">
