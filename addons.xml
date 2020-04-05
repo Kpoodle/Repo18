@@ -462,7 +462,7 @@ FYI - our content is available only in Israel.
 
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.1.8"                                                                                                                                        
+	   version="1.1.9"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -475,7 +475,7 @@ FYI - our content is available only in Israel.
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
+    <summary lang="en">האור שבחשכה, תורגם על ידי קמיליון</summary>
     <description lang="en">All the media as fast as possiable</description>
     <platform>all</platform>
   </extension>
