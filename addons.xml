@@ -863,6 +863,24 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
+<addon id="script.Poodle.pairwith"
+  name="Poodle Pair With"
+  version="2.8a" 
+  provider-name="Poodle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Poodle Menu System</summary>
+    <description lang="en">Poodle Menu System</description>
+	<disclaimer>Poodle Menu System</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.program.kodicleaner"
   name="Kodi Cleaner"
   version="10.3" 
