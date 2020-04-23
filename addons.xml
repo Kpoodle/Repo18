@@ -441,7 +441,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.6" provider-name="Kodi free">
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.7" provider-name="Kodi free">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -460,7 +460,7 @@ FYI - our content is available only in Israel.
 
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="1.4.3"
+	   version="1.5.5"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -471,8 +471,9 @@ FYI - our content is available only in Israel.
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
+    <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possiable</description>
+	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
