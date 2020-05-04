@@ -269,11 +269,12 @@ FYI - our content is available only in Israel.
 	
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.7.3"
+	   version="7.7.4"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -460,7 +461,7 @@ FYI - our content is available only in Israel.
 
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="1.6.5"
+	   version="1.6.6"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
