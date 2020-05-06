@@ -461,7 +461,7 @@ FYI - our content is available only in Israel.
 
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="1.6.6"
+	   version="1.7.1"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
