@@ -539,51 +539,6 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<addon id="repository.alanon" name="Alanon's Repo" version="1.0.2" provider-name="Alanon">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.repository" name="Alanon's Repo">
-		<dir minversion="17.0.0">
-			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml</info>
-			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton</datadir>
-		</dir>
-		<dir minversion="17.9.0">
-			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/leia</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Alanon's Kodi Repo</summary>
-		<description>Here you can find my Eminence 2 MOD.</description>
-		<platform>all</platform>
-		<assets>
-		   <icon>resources/icon.png</icon>
-		   <fanart>resources/fanart.jpg</fanart>
-		</assets>
-		<news>
-		- 1.0.0 Initial release.
-		- 1.0.1 Improved Git folder structure.
-		- 1.0.2 Repo rework for Leia updates.</news>
-	</extension>
-</addon>
-	
-<addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
-	<extension point="xbmc.addon.repository" name="Brian Hornsby's Repository">
-		<info>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml</info>
-		<checksum>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/releases/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository for Brian Hornsby's Kodi add-ons and scripts.</summary>
-		<description>Repository for Brian Hornsby's Kodi add-ons and scripts. Add-ons: BBC iPlayer and TuneIn Radio. Scripts: OpenVPN and SimilarTracks.</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-	
 <addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
         <extension point="xbmc.addon.repository" name="CPTV">
                 <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
@@ -598,19 +553,6 @@ FYI - our content is available only in Israel.
         </extension>
 </addon>
 
-<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
-	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
-		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>The Coldkeys Repo</summary>
-		<description>Download and install addons from the Coldkeys Repository</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-	
 <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.0" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -620,48 +562,6 @@ FYI - our content is available only in Israel.
 	<extension point="xbmc.addon.metadata">
 		<summary>Fishenzon Repo</summary>
 		<description>Fishenzon Repo</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
-	<extension point="xbmc.addon.repository" name="jafar">
-		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
-		<checksum>http://cha1m.com/dark/jafar/zips/addons.xml.md5</checksum>
-		<datadir zip="true">http://cha1m.com/dark/jafar/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>jafar</summary>
-		<description>jafar</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-	
-<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
-		<platform>all</platform>
-	</extension>
-</addon>	
-
-<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
-	<extension point="xbmc.addon.repository" name="L0RE">
-		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Official Repository of Kodinerds</summary>
-		<summary lang="de">Offizielles Repository der Kodinerds</summary>
-		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
-		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
-		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -688,20 +588,6 @@ FYI - our content is available only in Israel.
         </assets>
         <news></news>
     </extension>
-</addon>
-
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
-	
-	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
-		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="repository.PoodleWiz" name="Poodle Wizard Repository" version="1.0.0" provider-name="Poodle">
@@ -748,6 +634,138 @@ FYI - our content is available only in Israel.
 	</extension>
 </addon>
 
+<addon id="repository.alanon" name="Alanon's Repo" version="1.0.2" provider-name="Alanon">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Alanon's Repo">
+		<dir minversion="17.0.0">
+			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton</datadir>
+		</dir>
+		<dir minversion="17.9.0">
+			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/leia</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Alanon's Kodi Repo</summary>
+		<description>Here you can find my Eminence 2 MOD.</description>
+		<platform>all</platform>
+		<assets>
+		   <icon>resources/icon.png</icon>
+		   <fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>
+		- 1.0.0 Initial release.
+		- 1.0.1 Improved Git folder structure.
+		- 1.0.2 Repo rework for Leia updates.</news>
+	</extension>
+</addon>
+	
+<addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
+	<extension point="xbmc.addon.repository" name="Brian Hornsby's Repository">
+		<info>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml</info>
+		<checksum>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/releases/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repository for Brian Hornsby's Kodi add-ons and scripts.</summary>
+		<description>Repository for Brian Hornsby's Kodi add-ons and scripts. Add-ons: BBC iPlayer and TuneIn Radio. Scripts: OpenVPN and SimilarTracks.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.castagnait" name="CastagnaIT Repository for Kodi 18.x (LEIA)" version="1.0.1" provider-name="castagnait">
+	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
+		<dir>
+			<info>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml</info>
+			<checksum>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/master/zip</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>CastagnaIT Repository for Kodi 18.x (LEIA)</summary>
+		<description>Castagna IT repository for Kodi 18.x add-ons</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
+	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
+		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Coldkeys Repo</summary>
+		<description>Download and install addons from the Coldkeys Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
+	<extension point="xbmc.addon.repository" name="jafar">
+		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
+		<checksum>http://cha1m.com/dark/jafar/zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://cha1m.com/dark/jafar/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>jafar</summary>
+		<description>jafar</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+	
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
+	<extension point="xbmc.addon.repository" name="jsergio repo">
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo for jsergio Add-ons</summary>
+		<description>Repo for jsergio Add-ons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
+	<extension point="xbmc.addon.repository" name="L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Official Repository of Kodinerds</summary>
+		<summary lang="de">Offizielles Repository der Kodinerds</summary>
+		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
+		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+	
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -763,8 +781,55 @@ FYI - our content is available only in Israel.
             <description>carrying on the dream</description>
             <platform>all</platform>
         </extension>
+    </addon>
+
+<addon id="script.Poodle.pairwith"
+  name="Poodle Pair With"
+  version="2.8a" 
+  provider-name="Poodle">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Poodle Menu System</summary>
+    <description lang="en">Poodle Menu System</description>
+	<disclaimer>Poodle Menu System</disclaimer>
+  </extension>
 </addon>
-	
+
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.48" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.elementum" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.script" library="burst.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum torrents provider</summary>
+        <summary lang="hr">Elementum torrent pružatelji usluga</summary>
+		<summary lang="es">Proveedor de torrents Elementum</summary>
+        <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
+        <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
+		<description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
+		<disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>    
+		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://elementum.surge.sh</website>
+        <source>https://github.com/elgatito/script.elementum.burst</source>
+        <forum>TODO</forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -889,6 +954,6 @@ FYI - our content is available only in Israel.
     <language>en</language>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
-</addon>	
+</addon>
 
 </addons>
