@@ -2,6 +2,65 @@
 
 <addons>
 
+<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.0" provider-name="Elementum Unofficial">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
+        <dir>
+            <info compressed="false">https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml</info>
+            <checksum>https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml.md5</checksum>
+            <datadir zip="true">https://wolf.seedhost.eu/kcat2/Repo/zips3/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en"></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
+
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.3" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.python" version="2.23.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="plugin.video.elementum" optional="true"/>
+    </requires>
+    <extension point="kodi.context.item">
+      <menu id="kodi.core.main">
+          <label>My submenu</label>
+          <item library="context_play.py">
+            <label>32000</label>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
+          </item>
+          <item library="context_download.py">
+            <label>32012</label>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
+          </item>
+          <!-- <item library="context_menu.py">
+            <label>32001</label>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,episode)</visible>
+          </menu> -->
+    </menu>
+    </extension>
+    <extension point="kodi.addon.metadata">
+        <summary lang="en">Elementum Context Menu</summary>
+        <description lang="en">Context Menu for Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+        </disclaimer>
+        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://elementum.surge.sh</website>
+        <source>https://github.com/elgatito/context.elementum</source>
+        <forum></forum>
+    </extension>
+</addon>
+	
 <addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.11" provider-name="KodiMaster">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -28,6 +87,15 @@
         <info compressed="false">https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml</info>
         <datadir zip="true">https://github.com/Nux007/kodi-nux007-repository/raw/master</datadir>
     </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="fr">Nux007 repo</summary>
+        <description lang="fr">Installer les addons Nux007</description>
+        <summary lang="en">Nux007 repository</summary>
+        <description lang="en">Install addons created by Nux007</description>
+        <platform>all</platform>
+    </extension>
+</addon>
 
     <extension point="xbmc.addon.metadata">
         <summary lang="fr">Nux007 repo</summary>
