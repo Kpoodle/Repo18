@@ -484,6 +484,26 @@ FYI - our content is available only in Israel.
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="plugin.video.shadow"
+	   name="Shadow"
+	   version="1.7.8"
+	   provider-name="Darkness">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possiable</description>
+	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 	
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
@@ -502,23 +522,6 @@ FYI - our content is available only in Israel.
   <extension point="xbmc.addon.metadata">
     <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
     <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Vodil" name="Vod IL" version="1.3.6" provider-name="kodi senyor">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה לצפיה בסרטונים דרך הרחבות (מי יוטיוב)(יוטיוב)</summary>
-    <description lang="he">הרחבה לצפיה בתכנים דרך הרחבות (מי יוטיוב)(יוטיוב)</description>
-    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
