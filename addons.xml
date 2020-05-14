@@ -298,17 +298,50 @@ FYI - our content is available only in Israel.
       </item>
     </menu>
   </extension>
-</addon>	
+</addon>
+
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.7" provider-name="Kodi free">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה תוכן, שירות ועזר.</summary>
+    <description lang="he">הרחבה משמשת לקיצורים להרחבות ישראליות.ובנוסף נותנת תוכן המוזרם דרך הרחבות יוטיוב</description>
+    <disclaimer lang="en">Kodi free</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Vodil" name="Vod IL" version="1.3.6" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה לצפיה בסרטונים דרך הרחבות (מי יוטיוב)(יוטיוב)</summary>
+    <description lang="he">הרחבה לצפיה בתכנים דרך הרחבות (מי יוטיוב)(יוטיוב)</description>
+    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 	
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.5.7"
+	   version="7.7.4"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
-	<import addon="script.module.resolveurl" version="5.0.00"/>
-	<import addon="script.module.pyxbmct" version="1.1.4" />
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -351,6 +384,42 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
+<addon id="plugin.video.elementum" name="Elementum" version="0.0.38" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.elementum" optional="true" />
+        <!-- <import addon="script.elementum.burst" optional="true" /> -->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+            <screenshot>resources/screenshots/home.jpg</screenshot>
+            <screenshot>resources/screenshots/movies.jpg</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -377,30 +446,6 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<addon id="plugin.video.kodipopcorntime.repository" name="Markop159 Repository" version="1.1.0" provider-name="Markop159">
-	<extension point="xbmc.addon.repository" name="Markop159 Repository">
-		<info compressed="false">https://raw.githubusercontent.com/markop159/Markop159-repository/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/markop159/Markop159-repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/markop159/Markop159-repository/master/Releases</datadir>
-	</extension>
-	<requires>
-		<import version="2.14.0" addon="xbmc.python"/>
-	</requires>
-	<extension point="xbmc.addon.metadata">
-		<website><![CDATA[https://markop159.github.io/]]></website>
-		<source><![CDATA[https://github.com/markop159/Markop159-repository]]></source>
-		<language>English</language>
-		<licence><![CDATA[GNU GENERAL PUBLIC LOCENCE. Version 3, 29 June 2007]]></licence>
-		<summary>Markop159 repository</summary>
-		<description>Download, update and install Markop159 Repository.</description>
-		<disclaimer>
-			The Software is provided "as is" without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement.
-			Markop159 and anyone associated with these addons will not be held responsible for the use or misuse of this software if considered illegal in your country.  Use of this software is at your own risk.
-		</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-	
 <addon id="plugin.video.movixws"
 	   name="Movix Live"
 	   version="1.5.4"
