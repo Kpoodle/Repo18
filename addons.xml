@@ -847,27 +847,6 @@ FYI - our content is available only in Israel.
 	</extension>
 </addon>
 
-<addon id="script.module.mutagen"
-       name="mutagen"
-       provider-name="quodlibet"
-       version="1.41.1">
-
-    <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
-    </requires>
-
-    <extension library="lib" point="xbmc.python.module"/>
-
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en_GB">Mutagen is a Python module to handle audio metadata.</summary>
-        <description lang="en_GB">Mutagen is a Python module to handle audio metadata</description>
-        <license>GPLv2</license>
-        <website>https://pypi.org/project/mutagen/</website>
-        <source>https://github.com/quodlibet/mutagen</source>
-    </extension>
-</addon>
-
 <addon id="script.program.kodicleaner"
   name="Kodi Cleaner"
   version="10.3" 
