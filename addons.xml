@@ -2,152 +2,9 @@
 
 <addons>
 
-<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.0" provider-name="Elementum Unofficial">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
-        <dir>
-            <info compressed="false">https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml</info>
-            <checksum>https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml.md5</checksum>
-            <datadir zip="true">https://wolf.seedhost.eu/kcat2/Repo/zips3/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en"></summary>
-        <description lang="en"></description>
-        <disclaimer lang="en"></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news></news>
-    </extension>
-</addon>
+<!-- 1- Plugin Programs -->
 
-<addon id="context.elementum" name="Elementum Context Helper" version="0.0.3" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.python" version="2.23.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="plugin.video.elementum" optional="true"/>
-    </requires>
-    <extension point="kodi.context.item">
-      <menu id="kodi.core.main">
-          <label>My submenu</label>
-          <item library="context_play.py">
-            <label>32000</label>
-            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
-          </item>
-          <item library="context_download.py">
-            <label>32012</label>
-            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
-          </item>
-          <!-- <item library="context_menu.py">
-            <label>32001</label>
-            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) | StringCompare(ListItem.dbtype,season) | StringCompare(ListItem.dbtype,episode)</visible>
-          </menu> -->
-    </menu>
-    </extension>
-    <extension point="kodi.addon.metadata">
-        <summary lang="en">Elementum Context Menu</summary>
-        <description lang="en">Context Menu for Elementum.</description>
-        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
-        </disclaimer>
-        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
-        <website>https://elementum.surge.sh</website>
-        <source>https://github.com/elgatito/context.elementum</source>
-        <forum></forum>
-    </extension>
-</addon>
-	
-<addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.11" provider-name="KodiMaster">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="KodiMaster Repository">
-            <info compressed="false">https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/KodiMaster/repo/master/_repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>KodiMaster Repository</summary>
-            <description>The KodiMaster Repository - Home of the KodiMaster Wizard. http://kodimaster.com</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="nux007.repository"
-        name="Kodi Nux007 Repository"
-        version="0.0.4"
-        provider-name="Nux007">
-    <extension point="xbmc.addon.repository" name="Kodi Nux007 Repository">
-        <checksum>https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml.md5</checksum>
-        <info compressed="false">https://github.com/Nux007/kodi-nux007-repository/raw/master/addons.xml</info>
-        <datadir zip="true">https://github.com/Nux007/kodi-nux007-repository/raw/master</datadir>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">Nux007 repo</summary>
-        <description lang="fr">Installer les addons Nux007</description>
-        <summary lang="en">Nux007 repository</summary>
-        <description lang="en">Install addons created by Nux007</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="fr">Nux007 repo</summary>
-        <description lang="fr">Installer les addons Nux007</description>
-        <summary lang="en">Nux007 repository</summary>
-        <description lang="en">Install addons created by Nux007</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="plugin.audio.eco99music" name="eco99music" version="0.0.5" provider-name="Nir Elbaz, Noam Stolero">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.xmltodict"/>
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="he_IL">אלפי פלייליסטים וסטים מוזיקליים, ערוכים ומוכנים להאזנה, ומותאמים לכל מצב, בכל מקום ובכל שעה</summary>
-        <summary lang="en_GB">Thousands of premium music playlists for any mood, activity and time!</summary>
-        <description lang="he_IL">
-            ברוכים הבאים לתוסף eco99music מבית תחנת הרדיו eco99fm. מחכים לכם כאן אלפי פלייליסטים וסטים מוזיקליים, ערוכים ומוכנים להאזנה, ומותאמים לכל מצב, בכל מקום ובכל שעה.
-תהנו, האזנה נעימה!
-לתשומת לבכם- התוכן זמין ופעיל בישראל בלבד.
-        </description>
-        <description lang="en_GB">
-            Welcome to eco99music, an innovative music application based on the consumer possibilities of the listener and browser, and adapts edited music playlists for the current and relevant status of each listener. The app offers the consumers
-a unique and personalizes service, based on their location, activity, time of the day and their mood.
-Enjoy!
-…
-FYI - our content is available only in Israel.
-        </description>
-        <disclaimer lang="en_GB">This is an official ECO 99FM Kodi add-on</disclaimer>
-        <language>he</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <website>http://eco99fm.maariv.co.il/</website>
-        <email>radio@eco99.fm</email>
-        <source>https://github.com/nire0510/plugin.audio.eco99music</source>
-        <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
-            <screenshot>resources/media/screenshot-01.jpg</screenshot>
-            <screenshot>resources/media/screenshot-02.jpg</screenshot>
-            <screenshot>resources/media/screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-
+<!-- 1.1- jango -->
 <addon id="plugin.audio.jango"
        name="Jango"
        version="0.9.2"
@@ -172,92 +29,10 @@ FYI - our content is available only in Israel.
     </extension>
 	
 </addon>
-
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2019.09.30" provider-name="Bugatsinho">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.t0mm0.common" version="1.1.0"/>
-        <import addon="script.module.mutagen" version="1.41.1"/>
-        <import addon="script.module.requests" version="1.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio</provides>
-    </extension>
-    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>A music streaming collection</summary>
-        <description>Browse, stream or download your favourite songs and albums</description>
-        <news>Small fixes/fix artwork/next page
-        Credits to qahanik, kinkin, art by Marquerite for original code</news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.3" provider-name="brianhornsby">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="bg">Радио TuneIn</summary>
-		<summary lang="en">TuneIn Radio</summary>
-		<summary lang="de">TuneIn Radio</summary>
-		<summary lang="es">TuneIn Radio</summary>
-		<summary lang="el">Ραδιόφωνο TuneIn</summary>
-		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
-		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
-		<description lang="de">TuneIn Radio ist ein kostenloser Service, mit dem Sie alles in der Welt, wo immer Sie sind, hören können. Ob Sie Musik, Sport, Nachrichten oder aktuelle Ereignisse hören wollen. TuneIn Radio hält über 50.000 Sender für Sie bereit. Von der Suche nach lokalen Sender, bis zum entdecken neue Sender aus der ganzen Welt. TuneIn Radio bringt Sie, wohin sie wollen.</description>
-		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
-		<description lang="el">Το ραδιόφωνο TuneIn είναι μία δωρεάν υπηρεσία το οποίο σας επιτρέπει να ακούτε οποιοδήποτε σταθμό από όλο τον κόσμο, από όπου και αν βρίσκεστε. Ακόμη και αν θέλετε να ακούσετε μουσική, αθλητικά γεγονότα, ειδήσεις και άλλα γεγονότα, το ραδιόφωνο TuneIn προσφέρει πάνω από 50.000 σταθμούς για εσάς να διαλέξετε. Είτε θέλετε να ακούσετε τοπικούς σταθμούς είτε να ανακαλύψετε νέους από όλο τον κόσμο, το ραδιόφωνο TuneIn σας πηγαίνει όπου θελήσετε να βρεθείτε.</description>
-		<language></language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
-		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
-		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
-	</extension>
-</addon>
 	
-<addon id="plugin.close.kodi" name="[COLOR red] Force Close Kodi[/COLOR] " version="3.1.3" provider-name="Based_Skid">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Force Close Kodi</summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.LogPopup"
-	   name="Log popup"
-	   version="1.0.6"
-	   provider-name="Ebs">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.pyxbmct" version="1.1.4"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="login"></extension>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Much better Log popup</summary>
-    <description lang="he">Much better Log popup</description>
-    <platform>all</platform>
-  </extension>
-</addon>	
+<!-- 2- Plugin Programs -->
 	
+<!-- 2.1- Super Favourites -->
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -300,40 +75,9 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.7" provider-name="Kodi free">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה תוכן, שירות ועזר.</summary>
-    <description lang="he">הרחבה משמשת לקיצורים להרחבות ישראליות.ובנוסף נותנת תוכן המוזרם דרך הרחבות יוטיוב</description>
-    <disclaimer lang="en">Kodi free</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
+<!-- 3- Plugin Videos -->
 
-<addon id="plugin.video.Vodil" name="Vod IL" version="1.3.6" provider-name="kodi senyor">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה לצפיה בסרטונים דרך הרחבות (מי יוטיוב)(יוטיוב)</summary>
-    <description lang="he">הרחבה לצפיה בתכנים דרך הרחבות (מי יוטיוב)(יוטיוב)</description>
-    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-	
+<!-- 3.1- Victory -->
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
 	   version="7.7.4"
@@ -354,98 +98,8 @@ FYI - our content is available only in Israel.
     <platform>all</platform>
   </extension>
 </addon>
-	
-<addon id="plugin.video.destiny"                                                                                                                                    
-	   name="Destiny"                                                 
-	   version="1.3.1"                                                                                                                                        
-	   provider-name="Dark Child">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-	<import addon="script.module.resolveurl" version="5.0.00"/>
-	<import addon="script.common.plugin.cache" version="2.5.5"/>
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-	<import addon="script.module.futures" version="2.2.0"/>
-	<import addon="script.module.universalscrapers"/>
-	<import addon="script.module.beautifulsoup4" version="4.5.3"/>
-	<import addon="script.module.feedparser" />
-	<import addon="script.module.dateutil" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">The Moment You've All Been Waiting For... is FINALLY HERE </summary>
-    <description lang="he">Finally destiny is here, a new and revolutionary way to enjoy kodi.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.0.38" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-        <!-- <import addon="script.elementum.burst" optional="true" /> -->
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart></fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.karaoketv"
-       name="KaraokeTV"
-       version="1.1.0"
-       provider-name="Hybrid\Blade\Donatello">
-  <requires>
- <import addon="xbmc.python" version="2.1.0"/>
- <import addon="script.module.beautifulsoup4" version="4.3.1" />
- <import addon="script.module.requests" version="2.3.0" />
- <import addon="script.module.html5lib" version="0.999.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">This plugin let you watch karaoke.</summary>
-    <description lang="en">
-    Watch karaoke.
-    For donations: https://goo.gl/5MLzGS
-	Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
-	</description>
-    <platform>all</platform>
- <language>en</language>
- <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
-  </extension>
-</addon>
-
+<!-- 3.2- Movix -->
 <addon id="plugin.video.movixws"
 	   name="Movix Live"
 	   version="1.5.4"
@@ -466,25 +120,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה לצפייה , בתוכניות נוסטלגיה</summary>
-    <description lang="he">להרחבה יש מספר קטגוריות החל מתוכניות עבר, נוסטלגיה-ילדים,נוסטלגיה-כללי,תוכניות משודרות, לומדים מהבית,מוזיקה,וקטגוריה מיוחדת של ספיישלים.
-
-בכל קטגוריה תמצאו את הנושא שאליו מיועדות התוכניות, השתדלתי והתאמצתי מאוד כדי לספק לכם חוויה נוסטלגית עוצרת נשימה , כל התוכניות בפרקים מלאים , עונות מלאות,</description>
-    <disclaimer lang="en">ToMeR For Addons Premium</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
+<!-- 3.3- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="1.7.8"
@@ -504,68 +140,10 @@ FYI - our content is available only in Israel.
     <platform>all</platform>
   </extension>
 </addon>
-	
-<addon id="plugin.video.telemedia"
-	   name="Telemedia 2.0"
-	   version="1.8.3"
-	   provider-name="Pavel Durov">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
-    <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 
-<addon id="repository.5star" name="Repository for 5Star Kodi addons" version="1.0.8" provider-name="Luis Rodrigues">
-    <extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons">
-        <info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/5-star/repository.5star/raw/master/zips/</datadir>
-    </extension> 
-    <extension point="xbmc.addon.metadata">
-        <summary>Repository for 5Star Kodi addons</summary>
-        <description>Repository for 5Star Kodi addons</description>
-        <platform>all</platform>
-    </extension>
-</addon>
+<!-- 4- Repositories -->
 
-<addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
-        <extension point="xbmc.addon.repository" name="CPTV">
-                <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
-                <checksum>http://cha1m.com/oper1/addons.xml.md5</checksum>
-                <datadir zip="true">http://cha1m.com/oper1/zips</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-                <summary></summary>
-                <description lang="he"></description>
-                <disclaimer></disclaimer>
-                <platform>all</platform>
-        </extension>
-</addon>
-
-<addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.0" provider-name="Fishenzon">
-	<extension point="xbmc.addon.repository" name="Fishenzon repo">
-		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/fishenzon/repo/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Fishenzon Repo</summary>
-		<description>Fishenzon Repo</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
+<!-- 4.1- Poodle Add-ons Repo -->
 <addon id="repository.Kpoodle" name="Poodle Add-ons Repository" version="1.0.0" provider-name="Kpoodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -590,6 +168,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
+<!-- 4.2- Poodle Wizard Repo -->
 <addon id="repository.PoodleWiz" name="Poodle Wizard Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -614,275 +193,9 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="1.1" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
-	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
-	<dir>
-		<info compressed="false">http://mullafabz.xyz/Plugins/addons.xml</info>
-		<checksum>http://mullafabz.xyz/Plugins/addons.xml.md5</checksum>
-		<datadir zip="true">http://mullafabz.xyz/Plugins/</datadir>
-	</dir>
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-    </dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>All types of Contents</summary>
-		<description>Find any type of content</description>
-		<platform>all</platform>
-	</extension>
-</addon>
+<!-- 5- Scripts -->
 
-<addon id="repository.alanon" name="Alanon's Repo" version="1.0.2" provider-name="Alanon">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.repository" name="Alanon's Repo">
-		<dir minversion="17.0.0">
-			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml</info>
-			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton</datadir>
-		</dir>
-		<dir minversion="17.9.0">
-			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml</info>
-			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/leia</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Alanon's Kodi Repo</summary>
-		<description>Here you can find my Eminence 2 MOD.</description>
-		<platform>all</platform>
-		<assets>
-		   <icon>resources/icon.png</icon>
-		   <fanart>resources/fanart.jpg</fanart>
-		</assets>
-		<news>
-		- 1.0.0 Initial release.
-		- 1.0.1 Improved Git folder structure.
-		- 1.0.2 Repo rework for Leia updates.</news>
-	</extension>
-</addon>
-	
-<addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
-	<extension point="xbmc.addon.repository" name="Brian Hornsby's Repository">
-		<info>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml</info>
-		<checksum>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/releases/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repository for Brian Hornsby's Kodi add-ons and scripts.</summary>
-		<description>Repository for Brian Hornsby's Kodi add-ons and scripts. Add-ons: BBC iPlayer and TuneIn Radio. Scripts: OpenVPN and SimilarTracks.</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.castagnait" name="CastagnaIT Repository for Kodi 18.x (LEIA)" version="1.0.1" provider-name="castagnait">
-	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
-		<dir>
-			<info>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml</info>
-			<checksum>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/master/zip</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>CastagnaIT Repository for Kodi 18.x (LEIA)</summary>
-		<description>Castagna IT repository for Kodi 18.x add-ons</description>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.jpg</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
-	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
-		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>The Coldkeys Repo</summary>
-		<description>Download and install addons from the Coldkeys Repository</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
-	<extension point="xbmc.addon.repository" name="jafar">
-		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
-		<checksum>http://cha1m.com/dark/jafar/zips/addons.xml.md5</checksum>
-		<datadir zip="true">http://cha1m.com/dark/jafar/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>jafar</summary>
-		<description>jafar</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-	
-<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
-	<extension point="xbmc.addon.repository" name="jsergio repo">
-        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Repo for jsergio Add-ons</summary>
-		<description>Repo for jsergio Add-ons</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
-	<extension point="xbmc.addon.repository" name="L0RE">
-		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Official Repository of Kodinerds</summary>
-		<summary lang="de">Offizielles Repository der Kodinerds</summary>
-		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
-		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
-	
-	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
-		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="universalscrapers">
-            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
-            <description>carrying on the dream</description>
-            <platform>all</platform>
-        </extension>
-    </addon>
-
-<addon id="script.Poodle.pairwith"
-  name="Poodle Pair With"
-  version="2.8a" 
-  provider-name="Poodle">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Poodle Menu System</summary>
-    <description lang="en">Poodle Menu System</description>
-	<disclaimer>Poodle Menu System</disclaimer>
-  </extension>
-</addon>
-
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.48" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="plugin.video.elementum" optional="true"/>
-    </requires>
-    <extension point="xbmc.python.script" library="burst.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum torrents provider</summary>
-        <summary lang="hr">Elementum torrent pružatelji usluga</summary>
-		<summary lang="es">Proveedor de torrents Elementum</summary>
-        <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
-        <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
-		<description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
-        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
-		<disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>    
-		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
-        <website>https://elementum.surge.sh</website>
-        <source>https://github.com/elgatito/script.elementum.burst</source>
-        <forum>TODO</forum>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" version="2.0.10"/>
-		<import addon="plugin.video.idanplus" version="2.5.2"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.xmltodict"/>
-	</requires>
-	<extension point="xbmc.python.script" library="addon.py"/>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-	<extension point="xbmc.addon.metadata">
-	<provides>video</provides>
-		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
-		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
-	</extension>
-</addon>
-
-<addon id="script.program.kodicleaner"
-  name="Kodi Cleaner"
-  version="10.3" 
-  provider-name="VistaTV">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">kodi cleaner Deletes pyo files and thumbnails.</summary>
-    <description lang="en">kodi cleaner Deletes pyo files and thumbnails.</description>
-	<disclaimer>kodi cleaner</disclaimer>
-  </extension>
-</addon>
-
-<addon id="script.skinfont"
-    name="Skin Font" version="1.0.2" provider-name="taxigps">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"> 
-     <provides>executable</provides> 
-  </extension> 
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Add Arial skin fontset</summary>
-    <summary lang="zh">为皮肤增加Arial字体</summary>
-    <description lang="en">Add Arial skin fontset</description>
-    <description lang="zh">有些皮肤使用的字体文件中没有汉字造成中文无法显示，本插件可为此类皮肤增加支持中文显示的Arial字体选项。</description>
-    <platform>all</platform>
-    <language></language>
-  </extension>
-</addon>
-	
+<!-- 5.1- SubsKeys -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
@@ -903,6 +216,9 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
+<!-- 6- Service -->
+
+<!-- 6.1- All Subs Flash -->
 <addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.5" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -920,7 +236,8 @@ FYI - our content is available only in Israel.
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
-	
+
+<!-- 6.2- Subtitles Wizdom -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="2.0.4" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
