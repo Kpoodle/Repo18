@@ -137,7 +137,61 @@ FYI - our content is available only in Israel.
     </extension>
 	
 </addon>
-	
+
+<!-- 2.3- MP3 Streams -->
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2019.09.30" provider-name="Bugatsinho">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.t0mm0.common" version="1.1.0"/>
+        <import addon="script.module.mutagen" version="1.41.1"/>
+        <import addon="script.module.requests" version="1.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming collection</summary>
+        <description>Browse, stream or download your favourite songs and albums</description>
+        <news>Small fixes/fix artwork/next page
+        Credits to qahanik, kinkin, art by Marquerite for original code</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<!-- 2.4- TuneIn Radio -->
+<addon id="plugin.audio.tuneinradio" name="TuneIn Radio" version="3.0.3" provider-name="brianhornsby">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="bg">Радио TuneIn</summary>
+		<summary lang="en">TuneIn Radio</summary>
+		<summary lang="de">TuneIn Radio</summary>
+		<summary lang="es">TuneIn Radio</summary>
+		<summary lang="el">Ραδιόφωνο TuneIn</summary>
+		<description lang="bg">Радио TuneIn е безплатна услуга, която ви позволява да слушате всичко, независимо къде се намирате. Каквото желаете - музика, спорт или новини. Радио TuneIn предлага над 50 000 станции от които да избирате. Можете да намерите местните станции или да откриете нови станции от целия свят. Радио TuneIn ви отвежда точно където желаете да сте.</description>
+		<description lang="en">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="de">TuneIn Radio ist ein kostenloser Service, mit dem Sie alles in der Welt, wo immer Sie sind, hören können. Ob Sie Musik, Sport, Nachrichten oder aktuelle Ereignisse hören wollen. TuneIn Radio hält über 50.000 Sender für Sie bereit. Von der Suche nach lokalen Sender, bis zum entdecken neue Sender aus der ganzen Welt. TuneIn Radio bringt Sie, wohin sie wollen.</description>
+		<description lang="es">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<description lang="el">Το ραδιόφωνο TuneIn είναι μία δωρεάν υπηρεσία το οποίο σας επιτρέπει να ακούτε οποιοδήποτε σταθμό από όλο τον κόσμο, από όπου και αν βρίσκεστε. Ακόμη και αν θέλετε να ακούσετε μουσική, αθλητικά γεγονότα, ειδήσεις και άλλα γεγονότα, το ραδιόφωνο TuneIn προσφέρει πάνω από 50.000 σταθμούς για εσάς να διαλέξετε. Είτε θέλετε να ακούσετε τοπικούς σταθμούς είτε να ανακαλύψετε νέους από όλο τον κόσμο, το ραδιόφωνο TuneIn σας πηγαίνει όπου θελήσετε να βρεθείτε.</description>
+		<language></language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=119315</forum>
+		<website>http://brianhornsby.com/kodi_addons/tuneinradio</website>
+		<source>https://github.com/brianhornsby/plugin.audio.tuneinradio</source>
+	</extension>
+</addon>
+
 <!-- 3- Plugin Programs -->
 
 <!-- 3.1- Force Close Kodi -->
@@ -423,7 +477,50 @@ FYI - our content is available only in Israel.
 
 <!-- 6- Repositories B -->
 
-<!-- 6.1- Poodle Add-ons Repo -->
+<!-- 6.1- Repository for 5Star Kodi addons -->
+<addon id="repository.5star" name="Repository for 5Star Kodi addons" version="1.0.8" provider-name="Luis Rodrigues">
+    <extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons">
+        <info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/5-star/repository.5star/raw/master/zips/</datadir>
+    </extension> 
+    <extension point="xbmc.addon.metadata">
+        <summary>Repository for 5Star Kodi addons</summary>
+        <description>Repository for 5Star Kodi addons</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 6.2- Chameleon TV Repository -->
+<addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
+        <extension point="xbmc.addon.repository" name="CPTV">
+                <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
+                <checksum>http://cha1m.com/oper1/addons.xml.md5</checksum>
+                <datadir zip="true">http://cha1m.com/oper1/zips</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary></summary>
+                <description lang="he"></description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+<!-- 6.3- Fishenzon repo -->
+<addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.0" provider-name="Fishenzon">
+	<extension point="xbmc.addon.repository" name="Fishenzon repo">
+		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/fishenzon/repo/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Fishenzon Repo</summary>
+		<description>Fishenzon Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 6.4- Poodle Add-ons Repository -->
 <addon id="repository.Kpoodle" name="Poodle Add-ons Repository" version="1.0.0" provider-name="Kpoodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -448,7 +545,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 6.2- Poodle Wizard Repo -->
+<!-- 6.5- Poodle Wizard Repo -->
 <addon id="repository.PoodleWiz" name="Poodle Wizard Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -473,9 +570,190 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 7- Scripts -->
+<!-- 6.6- Rising Tides Repository -->
+<addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="1.1" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
+	<dir>
+		<info compressed="false">http://mullafabz.xyz/Plugins/addons.xml</info>
+		<checksum>http://mullafabz.xyz/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mullafabz.xyz/Plugins/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All types of Contents</summary>
+		<description>Find any type of content</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 
-<!-- 7.1- Poodle Pair With -->
+<!-- 7- Repositories C -->
+
+<!-- 7.1- Alanon's Repo -->
+<addon id="repository.alanon" name="Alanon's Repo" version="1.0.2" provider-name="Alanon">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Alanon's Repo">
+		<dir minversion="17.0.0">
+			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml</info>
+			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/krypton</datadir>
+		</dir>
+		<dir minversion="17.9.0">
+			<info compressed="true">https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml</info>
+			<checksum>https://github.com/Alanon202/repository.alanon/raw/master/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/Alanon202/repository.alanon/raw/master/leia</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Alanon's Kodi Repo</summary>
+		<description>Here you can find my Eminence 2 MOD.</description>
+		<platform>all</platform>
+		<assets>
+		   <icon>resources/icon.png</icon>
+		   <fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>
+		- 1.0.0 Initial release.
+		- 1.0.1 Improved Git folder structure.
+		- 1.0.2 Repo rework for Leia updates.</news>
+	</extension>
+</addon>
+	
+<!-- 7.2- Brian Hornsby's Repository -->
+<addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
+	<extension point="xbmc.addon.repository" name="Brian Hornsby's Repository">
+		<info>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml</info>
+		<checksum>https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/repository.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/brianhornsby/repository.brianhornsby/master/releases/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repository for Brian Hornsby's Kodi add-ons and scripts.</summary>
+		<description>Repository for Brian Hornsby's Kodi add-ons and scripts. Add-ons: BBC iPlayer and TuneIn Radio. Scripts: OpenVPN and SimilarTracks.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.3- CastagnaIT Repository for Kodi 18.x (LEIA) -->
+<addon id="repository.castagnait" name="CastagnaIT Repository for Kodi 18.x (LEIA)" version="1.0.1" provider-name="castagnait">
+	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
+		<dir>
+			<info>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml</info>
+			<checksum>https://github.com/CastagnaIT/repository.castagnait/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/CastagnaIT/repository.castagnait/raw/master/zip</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>CastagnaIT Repository for Kodi 18.x (LEIA)</summary>
+		<description>Castagna IT repository for Kodi 18.x add-ons</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.jpg</icon>
+		</assets>
+	</extension>
+</addon>
+
+<!-- 7.4- ColdKeys Repo -->
+<addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
+	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
+		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Coldkeys Repo</summary>
+		<description>Download and install addons from the Coldkeys Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.5- jafar -->
+<addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
+	<extension point="xbmc.addon.repository" name="jafar">
+		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
+		<checksum>http://cha1m.com/dark/jafar/zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://cha1m.com/dark/jafar/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>jafar</summary>
+		<description>jafar</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.6- jSergio repo -->
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
+	<extension point="xbmc.addon.repository" name="jsergio repo">
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo for jsergio Add-ons</summary>
+		<description>Repo for jsergio Add-ons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.6- kodinerds.net Add-ons -->
+<addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
+	<extension point="xbmc.addon.repository" name="L0RE">
+		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodinerds/repo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Official Repository of Kodinerds</summary>
+		<summary lang="de">Offizielles Repository der Kodinerds</summary>
+		<description lang="en">This is the official Repository of the german Community 'Kodinerds' which you'll find at www.kodinerds.net. Most of the hosted Addons are supported by the members of the Community. Enjoy!</description>
+		<description lang="de">Das ist das offizielle Repository der deutschen Community 'Kodinerds', welche Du unter www.kodinerds.net findest. Die meisten der hier gehosteten Addons werden von den Mitgliedern der Community aktiv supported. Viel Spaß!</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.7- Marcelveldt's BETA repository -->
+<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+	
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.8- universalscrapers-repository -->
+<addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="universalscrapers">
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description>carrying on the dream</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+
+<!-- 8- Scripts -->
+
+<!-- 8.1- Poodle Pair With -->
 <addon id="script.Poodle.pairwith"
   name="Poodle Pair With"
   version="2.8a" 
@@ -494,7 +772,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 7.2- Ivue TV Guide -->
+<!-- 8.2- Ivue TV Guide -->
 <addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -512,7 +790,67 @@ FYI - our content is available only in Israel.
 	</extension>
 </addon>
 
-<!-- 7.2- SubsKeys -->
+<!-- 8.3- mutagen (requires for MP3 Streams) -->
+<addon id="script.module.mutagen"
+       name="mutagen"
+       provider-name="quodlibet"
+       version="1.41.1">
+
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+
+    <extension library="lib" point="xbmc.python.module"/>
+
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Mutagen is a Python module to handle audio metadata.</summary>
+        <description lang="en_GB">Mutagen is a Python module to handle audio metadata</description>
+        <license>GPLv2</license>
+        <website>https://pypi.org/project/mutagen/</website>
+        <source>https://github.com/quodlibet/mutagen</source>
+    </extension>
+</addon>
+
+<!-- 8.4- Kodi Cleaner -->
+<addon id="script.program.kodicleaner"
+  name="Kodi Cleaner"
+  version="10.3" 
+  provider-name="VistaTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">kodi cleaner Deletes pyo files and thumbnails.</summary>
+    <description lang="en">kodi cleaner Deletes pyo files and thumbnails.</description>
+	<disclaimer>kodi cleaner</disclaimer>
+  </extension>
+</addon>
+
+<!-- 8.5- Skin Font -->
+<addon id="script.skinfont"
+    name="Skin Font" version="1.0.2" provider-name="taxigps">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py"> 
+     <provides>executable</provides> 
+  </extension> 
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Add Arial skin fontset</summary>
+    <summary lang="zh">为皮肤增加Arial字体</summary>
+    <description lang="en">Add Arial skin fontset</description>
+    <description lang="zh">有些皮肤使用的字体文件中没有汉字造成中文无法显示，本插件可为此类皮肤增加支持中文显示的Arial字体选项。</description>
+    <platform>all</platform>
+    <language></language>
+  </extension>
+</addon>
+
+<!-- 8.6- SubsKeys (requires for All Subs Flash) -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
@@ -533,9 +871,9 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 8- Service -->
+<!-- 9- Service -->
 
-<!-- 8.1- All Subs Flash -->
+<!-- 9.1- All Subs Flash -->
 <addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.5" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -554,7 +892,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 8.2- Subtitles Wizdom -->
+<!-- 9.2- Subtitles Wizdom -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="2.0.4" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
