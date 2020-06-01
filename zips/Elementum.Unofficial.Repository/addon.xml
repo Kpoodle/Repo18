@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.0" provider-name="Elementum Unofficial">
+<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.1" provider-name="Elementum Unofficial">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
     <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
         <dir>
-            <info compressed="false">https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml</info>
-            <checksum>https://wolf.seedhost.eu/kcat2/Repo/zips3/addons.xml.md5</checksum>
-            <datadir zip="true">https://wolf.seedhost.eu/kcat2/Repo/zips3/</datadir>
+            <info compressed="false">https://server1056.seedhost.eu/ftvtorrents/Repo/zips3/addons.xml</info>
+            <checksum>https://server1056.seedhost.eu/ftvtorrents/Repo/zips3/addons.xml.md5</checksum>
+            <datadir zip="true">https://server1056.seedhost.eu/ftvtorrents/Repo/zips3/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
