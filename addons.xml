@@ -175,7 +175,25 @@ FYI - our content is available only in Israel.
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="bg">Радио TuneIn</summary>
-		<summary lang="en">TuneIn Radio</summary>
+		<summary lang="en">TuneIn Radio</summary><addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.0.6"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possiable</description>
+	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 		<summary lang="de">TuneIn Radio</summary>
 		<summary lang="es">TuneIn Radio</summary>
 		<summary lang="el">Ραδιόφωνο TuneIn</summary>
@@ -403,9 +421,9 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.5- Shadow -->
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.0.3"
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.0.6"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
