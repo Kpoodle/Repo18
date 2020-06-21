@@ -450,9 +450,9 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.5- Shadow -->
-<addon id="plugin.video.shadow"                                                                                                                                    
-	   name="Shadow"                                                 
-	   version="2.0.6"                                                                                                                                        
+<addon id="plugin.video.shadow"
+	   name="Shadow"
+	   version="2.0.7"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
