@@ -29,36 +29,7 @@
     </extension>
 </addon>
 
-<!-- 1.2- inputstream.rtmp -->
-<addon
-  id="inputstream.rtmp"
-  version="2.0.9"
-  name="RTMP Input"
-  provider-name="spiff">
-  <requires>
-<import addon="kodi.binary.global.main" version="1.0.14"/>
-<import addon="kodi.binary.instance.inputstream" version="2.0.8"/></requires>
-  <extension
-    point="kodi.inputstream"
-    name="rtmp"
-    protocols="rtmp|rtmpt|rtmpe|rtmpte|rtmps"
-    library_android="libinputstream.rtmp.so" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Client for RTMP streams</summary>
-    <description lang="en">The Real Time Messaging Protocol (RTMP) is a proprietary network protocol developed by Adobe Inc. to transmit audio, video and other data over the Internet from a media server to a flash player.
-
-This addon implements RTMP streaming support for Kodi and installed add-ons.
-</description>
-    <platform>android-aarch64</platform>
-    <license>GPL-2.0</license>
-    <source>https://github.com/xbmc/inputstream.rtmp</source>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<!-- 1.2a- KodiMaster Repository -->
+<!-- 1.2- KodiMaster Repository -->
 <addon id="kodimaster.repository" name="KodiMaster Repository" version="1.0.11" provider-name="KodiMaster">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -452,7 +423,7 @@ FYI - our content is available only in Israel.
 <!-- 5.5- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="2.0.7"
+	   version="2.0.9"
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
