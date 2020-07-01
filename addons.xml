@@ -423,10 +423,11 @@ FYI - our content is available only in Israel.
 <!-- 5.5- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="2.1.2"                                                                                                                                        
+	   version="2.1.3"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.six" version="0.0.1"/>
 	<import addon="script.module.requests"/>
   </requires>
   <extension point="xbmc.python.pluginsource"
@@ -862,13 +863,13 @@ FYI - our content is available only in Israel.
 <!-- 9- Service -->
 
 <!-- 9.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.5" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.7" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
 	<import addon="script.common.plugin.cache" version="2.5.5"/>
     <import addon="script.subskeys" version="1.0.1"/>
-	<import addon="script.module.chardet" />
+	<import addon="script.module.chardet" />	
   </requires>
   <extension point="xbmc.service" library="autosub.py" start="startup"></extension> 
   <extension point="xbmc.subtitle.module" library="service.py"/>
