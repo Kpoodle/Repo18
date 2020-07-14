@@ -352,7 +352,36 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.2- KaraokeTV -->
+<!-- 5.2- Formula 1 -->
+<addon id="plugin.video.formula1" name="Formula 1" version="1.0.0" provider-name="jaylinski">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.future" version="0.16.0"/>
+        <import addon="script.module.requests" version="2.4.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Videos von der Formula 1 Website</summary>
+        <summary lang="en_GB">Videos from the Formula 1 website</summary>
+        <disclaimer lang="en_GB">This plugin is not official, approved or endorsed by Formula 1.</disclaimer>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=352138</forum>
+        <website>https://www.formula1.com</website>
+        <source>https://github.com/jaylinski/kodi-addon-formula1</source>
+        <news>1.0.0 (2020-03-03)
+Initial release.
+        </news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<!-- 5.3- KaraokeTV -->
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -379,7 +408,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.3- Movix -->
+<!-- 5.4- Movix -->
 <addon id="plugin.video.movixws"
 	   name="Movix Live"
 	   version="1.5.4"
@@ -400,7 +429,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.4- חינוכית נוסטלגיה -->
+<!-- 5.5- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -420,7 +449,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.5- Shadow -->
+<!-- 5.6- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.1.8"
@@ -442,7 +471,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.6- Telemedia 2.0 -->
+<!-- 5.7- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.3"
