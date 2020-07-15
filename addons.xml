@@ -67,6 +67,31 @@
     </extension>
 </addon>
 
+<!-- 1.3- Markop159 Repository (Popcorn Time) -->
+<addon id="plugin.video.kodipopcorntime.repository" name="Markop159 Repository" version="1.1.0" provider-name="Markop159">
+	<extension point="xbmc.addon.repository" name="Markop159 Repository">
+		<info compressed="false">https://raw.githubusercontent.com/markop159/Markop159-repository/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/markop159/Markop159-repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/markop159/Markop159-repository/master/Releases</datadir>
+	</extension>
+	<requires>
+		<import version="2.14.0" addon="xbmc.python"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<website><![CDATA[https://markop159.github.io/]]></website>
+		<source><![CDATA[https://github.com/markop159/Markop159-repository]]></source>
+		<language>English</language>
+		<licence><![CDATA[GNU GENERAL PUBLIC LOCENCE. Version 3, 29 June 2007]]></licence>
+		<summary>Markop159 repository</summary>
+		<description>Download, update and install Markop159 Repository.</description>
+		<disclaimer>
+			The Software is provided "as is" without warranty of any kind, either express or implied, including without limitation any implied warranties of condition, uninterrupted use, merchantability, fitness for a particular purpose, or non-infringement.
+			Markop159 and anyone associated with these addons will not be held responsible for the use or misuse of this software if considered illegal in your country.  Use of this software is at your own risk.
+		</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <!-- 2- Plugin Audios -->
 	
 <!-- 2.1- eco99music -->
@@ -751,7 +776,22 @@ Initial release.
 	</extension>
 </addon>
 
-<!-- 7.8- universalscrapers-repository -->
+<!-- 7.8- Sdarot.Tv Repository -->
+<addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
+        <extension point="xbmc.addon.repository" name="Sdarot Repository">
+                <info compressed="false">http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml</info>
+                <checksum>http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml.md5</checksum>
+                <datadir zip="true">http://raw.github.com/Sdarot/Repo-Sdarot/master/zip</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Sdarot.Tv Repository</summary>
+                <description>Sdarot.Tv Repository</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+<!-- 7.9- universalscrapers-repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
