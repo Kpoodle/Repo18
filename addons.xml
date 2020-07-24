@@ -449,14 +449,16 @@ Initial release.
 </addon>
 
 <!-- 5.4- Movix -->
-<addon id="plugin.video.movixws"
-	   name="Movix Live"
-	   version="1.5.4"
+<addon id="plugin.video.movixws"                                                                                                                                    
+	   name="Movix Live"                                                 
+	   version="1.5.5"
 	   provider-name="Movix">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
 	<import addon="script.module.resolveurl" version="5.0.00"/>
+ 
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -832,7 +834,22 @@ Initial release.
         </assets>			
 </addon>
 
-<!-- 7.9- Sdarot.Tv Repository -->
+<!-- 7.9- Movix Repo -->
+<addon id="repository.movix" name="[COLOR gold]Movix[/COLOR] [COLOR gold]Repo[/COLOR]" version="1.0.3" provider-name="Movix">
+        <extension point="xbmc.addon.repository" name="Movix Repository">
+                <info compressed="false">http://raw.github.com/Movixme/Movix/master/addons.xml</info>
+                <checksum>http://raw.github.com/Movixme/Movix/master/addons.xml.md5</checksum>
+                <datadir zip="true">http://raw.github.com/Movixme/Movix/master/zip</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Movix Repository</summary>
+                <description>Movix Repository</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+<!-- 7.10- Sdarot.Tv Repository -->
 <addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
         <extension point="xbmc.addon.repository" name="Sdarot Repository">
                 <info compressed="false">http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml</info>
@@ -847,7 +864,7 @@ Initial release.
         </extension>
 </addon>
 
-<!-- 7.10- TempTV Repo -->
+<!-- 7.11- TempTV Repo -->
 <addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml</info>
@@ -861,7 +878,7 @@ Initial release.
 	</extension>
 </addon>
 
-<!-- 7.11- universalscrapers-repository -->
+<!-- 7.12- universalscrapers-repository -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.1">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -915,7 +932,7 @@ Initial release.
 	</extension>
 </addon>
 
-<!-- 7.12- universalscrapers-repository -->
+<!-- 7.13- universalscrapers-repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
