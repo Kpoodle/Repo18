@@ -492,16 +492,12 @@ Initial release.
 </addon>
 
 <!-- 5.6- Shadow -->
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.2.5"
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.3.4"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
-	<import addon="script.module.resolveurl" version="5.0.00"/>
-	<import addon="script.module.openscrapers" version="0.0.2.008" />
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.six" version="0.0.1"/>
-	<import addon="script.module.requests"/>
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -509,8 +505,8 @@ Initial release.
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possiable</description>
-	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
+    <description lang="en">All the media as fast as possible</description>
+	
     <platform>all</platform>
   </extension>
 </addon>
@@ -518,7 +514,7 @@ Initial release.
 <!-- 5.7- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
-	   version="1.8.7"
+	   version="1.8.9a"
 	   provider-name="Pavel Durov">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
