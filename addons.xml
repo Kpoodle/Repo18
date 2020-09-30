@@ -494,7 +494,7 @@ Initial release.
 <!-- 5.6- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="2.3.4"                                                                                                                                        
+	   version="2.3.9"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
 	
