@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.shadow"                                                                                                                                    
-	   name="Shadow"                                                 
-	   version="2.3.9"                                                                                                                                        
+<addon id="plugin.video.shadow"
+	   name="Shadow"
+	   version="2.4.4a"
 	   provider-name="Darkness">
   <requires>
-	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -13,7 +12,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possible</description>
-	
     <platform>all</platform>
   </extension>
 </addon>
