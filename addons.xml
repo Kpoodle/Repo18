@@ -988,7 +988,26 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.5- jafar -->
+<!-- 7.5- Dobbelina Repository -->
+<addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.2" provider-name="dobbelina">
+    <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+</dir>
+        <info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Addons for Kodi</summary>
+        <description>For Ultimate Whitecream Updates</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 7.6- jafar Repo -->
 <addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
 	<extension point="xbmc.addon.repository" name="jafar">
 		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
@@ -1002,7 +1021,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.6- jSergio repo -->
+<!-- 7.7- jSergio repo -->
 <addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
 	<extension point="xbmc.addon.repository" name="jsergio repo">
         <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
@@ -1016,7 +1035,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.6- kodinerds.net Add-ons -->
+<!-- 7.8- kodinerds.net Add-ons -->
 <addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
 	<extension point="xbmc.addon.repository" name="L0RE">
 		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
@@ -1033,7 +1052,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.7- Marcelveldt's BETA repository -->
+<!-- 7.9- Marcelveldt's BETA repository -->
 <addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
 	
 	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
@@ -1048,7 +1067,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.8- mbebe Repository -->
+<!-- 7.10- mbebe Repository -->
 <addon id="repository.mbebe" name="mbebe" version="0.5" provider-name="mbebe">
 		<extension point="xbmc.addon.repository" name="mbebe">
 			<info compressed="false">https://raw.githubusercontent.com/mbebe/blomqvist/master/zips/addons.xml</info>
@@ -1071,7 +1090,7 @@ is mkv.
         </assets>			
 </addon>
 
-<!-- 7.9- Movix Repo -->
+<!-- 7.11- Movix Repo -->
 <addon id="repository.movix" name="[COLOR gold]Movix[/COLOR] [COLOR gold]Repo[/COLOR]" version="1.0.3" provider-name="Movix">
         <extension point="xbmc.addon.repository" name="Movix Repository">
                 <info compressed="false">http://raw.github.com/Movixme/Movix/master/addons.xml</info>
@@ -1086,7 +1105,30 @@ is mkv.
         </extension>
 </addon>
 
-<!-- 7.10- Sdarot.Tv Repository -->
+<!-- 7.12- ResolveURL Repository -->
+<addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="ResolveURL Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en_GB">ResolveURL and Link Tester</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets> 
+  </extension>
+</addon>
+
+<!-- 7.13- Sdarot.Tv Repository -->
 <addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
         <extension point="xbmc.addon.repository" name="Sdarot Repository">
                 <info compressed="false">http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml</info>
@@ -1101,7 +1143,7 @@ is mkv.
         </extension>
 </addon>
 
-<!-- 7.11- TempTV Repo -->
+<!-- 7.14- TempTV Repo -->
 <addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml</info>
@@ -1115,7 +1157,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.12- universalscrapers-repository -->
+<!-- 7.15- The Crew Repository -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.1">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -1169,7 +1211,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.13- universalscrapers-repository -->
+<!-- 7.16- universalscrapers-repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
