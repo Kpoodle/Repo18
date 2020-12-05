@@ -1035,7 +1035,7 @@ Initial release.
 <!-- 8.1- Poodle Pair With -->
 <addon id="script.Poodle.pairwith"
   name="Poodle Pair With"
-  version="3.0" 
+  version="3.2" 
   provider-name="Poodle">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
