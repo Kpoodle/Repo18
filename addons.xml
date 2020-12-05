@@ -1051,7 +1051,31 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.2- Ivue TV Guide -->
+<!-- 8.2- Autoruns -->
+<addon id="script.autoruns"
+       name="Autoruns"
+       version="1.0.1"
+       provider-name="fightnight">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<forum>http://forum.kodi.tv/showthread.php?tid=223015</forum>
+		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
+		<summary lang="en">Disable startup services on Kodi</summary>
+		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+    </extension>
+</addon>
+	
+<!-- 8.3- Ivue TV Guide -->
 <addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1069,7 +1093,7 @@ Initial release.
 	</extension>
 </addon>
 
-<!-- 8.3- mutagen (requires for MP3 Streams) -->
+<!-- 8.4- mutagen (requires for MP3 Streams) -->
 <addon id="script.module.mutagen"
        name="mutagen"
        provider-name="quodlibet"
@@ -1091,7 +1115,7 @@ Initial release.
     </extension>
 </addon>
 
-<!-- 8.4- Kodi Cleaner -->
+<!-- 8.5- Kodi Cleaner -->
 <addon id="script.program.kodicleaner"
   name="Kodi Cleaner"
   version="10.3" 
@@ -1110,7 +1134,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.5- Skin Font -->
+<!-- 8.6- Skin Font -->
 <addon id="script.skinfont"
     name="Skin Font" version="1.0.2" provider-name="taxigps">
   <requires>
@@ -1129,7 +1153,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.6- SubsKeys (requires for All Subs Flash) -->
+<!-- 8.7- SubsKeys (requires for All Subs Flash) -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
