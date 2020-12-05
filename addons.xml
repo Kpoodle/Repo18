@@ -615,7 +615,63 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.12- Vision of Destiny -->
+<!-- 5.12- The Magic Dragon -->
+<addon id="plugin.video.themagicdragon"
+       name="The Magic Dragon"
+       version="1.39"
+       provider-name="Magic Dragon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLORblue]Magic Dragon All In One Add On[/COLOR]</summary>
+    <description lang="en">[COLORblue]This Is A 3rd Party Add On And Is Not Linked To Kodi In Any Way. All The Content We Provide Is Freely Available On The Internet. We Do Not Store Any Content Ourselves.[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- 5.13- Victory Show -->
+<addon id="plugin.video.victory_show" name="victory_show" version="1.0.0" provider-name="Victory Show">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+        <!--<import addon="repository.sdarot" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch victory_show video contents.</summary>
+        <summary lang="he"></summary>
+        <description lang="en">KodiCat</description>
+        <description lang="he">KodiCat</description>
+        <news>[B]Version 1.0.0[/B][CR]Changes inside addon to fit site changes.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<!-- 5.14- Vision of Destiny -->
 <addon id="plugin.video.vod"
 	   name="[COLORgrey]Vision of Destiny[/COLOR]"
 	   version="1.4.0"
