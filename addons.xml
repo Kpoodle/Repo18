@@ -1065,7 +1065,7 @@ Initial release.
 <!-- 9- Service -->
 
 <!-- 9.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.9" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.2" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
