@@ -417,7 +417,35 @@ Initial release.
     </extension>
 </addon>
 
-<!-- 5.3- KaraokeTV -->
+<!-- 5.3- Ghost -->
+<addon id="plugin.video.ghost" name="Ghost" version="5.0.4" provider-name="Ghost">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio.alt"  />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+		<import addon="script.module.feedparser" version="5.1.3"/>
+        <import addon="script.module.resolveurl" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">All In One Addon</summary>
+        <description lang="en">All In One Addon</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<!-- 5.4- KaraokeTV -->
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -444,7 +472,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.4- Mando -->
+<!-- 5.5- Mando -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.0.8"
@@ -462,7 +490,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.5- Movix -->
+<!-- 5.6- Movix -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.6"
@@ -485,7 +513,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.6- חינוכית נוסטלגיה -->
+<!-- 5.7- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -505,7 +533,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.7- Shadow -->
+<!-- 5.8- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.4.6a"
@@ -523,7 +551,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.8- SportHD -->
+<!-- 5.9- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.0.9" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -543,7 +571,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.9- Telemedia 2.0 -->
+<!-- 5.10- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.9a"
