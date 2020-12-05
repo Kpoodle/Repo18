@@ -127,32 +127,7 @@
             ברוכים הבאים לתוסף eco99music מבית תחנת הרדיו eco99fm. מחכים לכם כאן אלפי פלייליסטים וסטים מוזיקליים, ערוכים ומוכנים להאזנה, ומותאמים לכל מצב, בכל מקום ובכל שעה.
 תהנו, האזנה נעימה!
 לתשומת לבכם- התוכן זמין ופעיל בישראל בלבד.
-        </descripti<addon id="plugin.video.ghost" name="Ghost" version="5.0.4" provider-name="Ghost">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio.alt"  />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <import addon="script.module.dateutil" />
-		<import addon="script.module.feedparser" version="5.1.3"/>
-        <import addon="script.module.resolveurl" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">All In One Addon</summary>
-        <description lang="en">All In One Addon</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <platform>all</platform>
-        <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-    </extension>
-</addon>on>
+        </description>
         <description lang="en_GB">
             Welcome to eco99music, an innovative music application based on the consumer possibilities of the listener and browser, and adapts edited music playlists for the current and relevant status of each listener. The app offers the consumers
 a unique and personalizes service, based on their location, activity, time of the day and their mood.
@@ -442,57 +417,7 @@ Initial release.
     </extension>
 </addon>
 
-<!-- 5.3- Ghost -->
-<addon id="plugin.video.ghost" name="Ghost" version="5.0.4" provider-name="Ghost">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio.alt"  />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <import addon="script.module.dateutil" />
-		<import addon="script.module.feedparser" version="5.1.3"/>
-        <import addon="script.module.resolveurl" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">All In One Addon</summary>
-        <description lang="en">All In One Addon</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <platform>all</platform>
-        <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-    </extension>
-</addon>
-
-<!-- 5.4- Gridiron Legends -->
-<addon id="plugin.video.gridironlegends" name="[COLOR gold]Gridiron Legends[/COLOR]" version="4.00.002" provider-name="Chief Osceola">
-  <requires>
-	<import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.simplejson"/>
-	<import addon="script.common.plugin.cache"/>
-	<import addon="script.module.metahandler"/>
-	<import addon="script.module.requests"/>
-	<import addon="script.module.beautifulsoup4" />
-	<import addon="script.module.html5lib" />
-	<import addon="script.module.resolveurl" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-	<provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<summary lang="en">All-Around Sports Addon</summary>
-	<description lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</description>
-	<platform>all</platform>
-  </extension>
-</addon>
-
-<!-- 5.5- KaraokeTV -->
+<!-- 5.3- KaraokeTV -->
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -519,25 +444,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.6- Mando S -->
-<addon id="plugin.video.mando"
-	   name="Mando S"
-	   version="4.0.8"
-	   provider-name="Darkness">
-  <requires>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<!-- 5.7- Movix -->
+<!-- 5.4- Movix -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.6"
@@ -560,7 +467,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.8- חינוכית נוסטלגיה -->
+<!-- 5.5- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -580,7 +487,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.9- Shadow -->
+<!-- 5.6- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.4.4a"
@@ -598,61 +505,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.9- SportHD -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.0.9" provider-name="Bugatsinho">
-  <requires>
-    <!--import addon="xbmc.python" version="2.1.0"/-->
-    <import addon="script.module.dateutil" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">SportHD by Bugatsinho</summary>
-    <description lang="en">Sport Streams from SportHD.me</description>
-    <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
-	<language>EN</language>
-    <license>GNU GPL, version 2</license>
-    <twitter>https://twitter.com/Bugatsinho</twitter>
-    <news>-add youtube links support</news>
-  </extension>
-</addon>
-
-<!-- 5.10- Youtube Music -->
-<addon id="plugin.video.spotitube" name="Youtube Music" version="2.1.9" provider-name="realvito (inspired by L0RE)">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="plugin.video.youtube" version="6.5.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">YouTube Musicplayer</summary>
-		<summary lang="en_GB">YouTube Musicplayer</summary>
-		<description lang="de_DE">Musik aus verschiedenen Quellen z.B. Beatport, Billboard, iTunes, Officialcharts etc. auswählen und über YouTube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<description lang="en_GB">Choose Music from different sources e.g. Beatport, Billboard, iTunes, Officialcharts etc. and play it via YouTube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
-		<website></website>
-		<email></email>
-		<source>https://repo.kodinerds.net/addons/krypton/zip/plugin.video.spotitube</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>[B][COLOR orangered]Version 2.1.9  (25.09.2020)[/COLOR][/B][CR]
-- fixed: Various music videos are not played (Encoding-Error)
-- added: Possibility to delete the entire cache folder (settings)
-		</news>
-	</extension>
-</addon>
-
-<!-- 5.11- Telemedia 2.0 -->
+<!-- 5.7- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.9a"
@@ -1091,63 +944,7 @@ Initial release.
 
 <!-- 8- Scripts -->
 
-<!-- 8.1- Autoruns -->
-<addon id="script.autoruns"
-       name="Autoruns"
-       version="1.0.1"
-       provider-name="fightnight">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/> 
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-		<forum>http://forum.kodi.tv/showthread.php?tid=223015</forum>
-		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
-		<summary lang="en">Disable startup services on Kodi</summary>
-		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
-		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
-		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
-		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
-		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
-    </extension>
-</addon>
-
-<!-- 8.2- Burst -->
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.50" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="plugin.video.elementum" optional="true"/>
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.future" version="0.16.0.4"/>
-    </requires>
-    <extension point="xbmc.python.script" library="burst.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum torrents provider</summary>
-        <summary lang="hr">Elementum torrent pružatelji usluga</summary>
-		<summary lang="es">Proveedor de torrents Elementum</summary>
-        <description lang="en">Elementum Burst is a lean and mean multi-provider for Elementum.</description>
-        <description lang="hr">Elementum Burst je višestruki pružatelj usluga za Elementum.</description>
-		<description lang="es">Elementum Burst es un multi-proveedor simple y eficiente para Elementum.</description>
-        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa bilo kojim izvorom sadržaja.</disclaimer>
-		<disclaimer lang="es">El autor no aloja ni distribuye ninguno de los contenidos mostrados por este complemento. El autor no tiene ninguna afiliación con los proveedores de contenido.</disclaimer>    
-		<license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
-        <website>https://elementum.surge.sh</website>
-        <source>https://github.com/elgatito/script.elementum.burst</source>
-        <forum>TODO</forum>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<!-- 8.3- Poodle Pair With -->
+<!-- 8.1- Poodle Pair With -->
 <addon id="script.Poodle.pairwith"
   name="Poodle Pair With"
   version="3.0" 
@@ -1166,7 +963,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.4- Ivue TV Guide -->
+<!-- 8.2- Ivue TV Guide -->
 <addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1184,7 +981,7 @@ Initial release.
 	</extension>
 </addon>
 
-<!-- 8.5- mutagen (requires for MP3 Streams) -->
+<!-- 8.3- mutagen (requires for MP3 Streams) -->
 <addon id="script.module.mutagen"
        name="mutagen"
        provider-name="quodlibet"
@@ -1206,7 +1003,7 @@ Initial release.
     </extension>
 </addon>
 
-<!-- 8.6- Kodi Cleaner -->
+<!-- 8.4- Kodi Cleaner -->
 <addon id="script.program.kodicleaner"
   name="Kodi Cleaner"
   version="10.3" 
@@ -1225,7 +1022,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.7- Skin Font -->
+<!-- 8.5- Skin Font -->
 <addon id="script.skinfont"
     name="Skin Font" version="1.0.2" provider-name="taxigps">
   <requires>
@@ -1244,7 +1041,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 8.8- SubsKeys (requires for All Subs Flash) -->
+<!-- 8.6- SubsKeys (requires for All Subs Flash) -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
@@ -1268,7 +1065,7 @@ Initial release.
 <!-- 9- Service -->
 
 <!-- 9.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.2" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.9" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
