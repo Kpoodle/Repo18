@@ -511,11 +511,6 @@ Initial release.
 	   version="2.4.4a"
 	   provider-name="Darkness">
   <requires>
-  </requires><addon id="plugin.video.mando"
-	   name="Mando S"
-	   version="4.0.8"
-	   provider-name="Darkness">
-  <requires>
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -527,18 +522,28 @@ Initial release.
     <platform>all</platform>
   </extension>
 </addon>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
+
+<!-- 5.8- SportHD -->
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.0.9" provider-name="Bugatsinho">
+  <requires>
+    <!--import addon="xbmc.python" version="2.1.0"/-->
+    <import addon="script.module.dateutil" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-    <platform>all</platform>
+    <summary lang="en">SportHD by Bugatsinho</summary>
+    <description lang="en">Sport Streams from SportHD.me</description>
+    <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
+	<language>EN</language>
+    <license>GNU GPL, version 2</license>
+    <twitter>https://twitter.com/Bugatsinho</twitter>
+    <news>-add youtube links support</news>
   </extension>
 </addon>
 
-<!-- 5.8- Telemedia 2.0 -->
+<!-- 5.9- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.9a"
