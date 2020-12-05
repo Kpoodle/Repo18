@@ -444,7 +444,25 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.4- Movix -->
+<!-- 5.4- Mando -->
+<addon id="plugin.video.mando"
+	   name="Mando S"
+	   version="4.0.8"
+	   provider-name="Darkness">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- 5.5- Movix -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.6"
@@ -467,7 +485,7 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.5- חינוכית נוסטלגיה -->
+<!-- 5.6- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -487,10 +505,15 @@ Initial release.
   </extension>
 </addon>
 
-<!-- 5.6- Shadow -->
+<!-- 5.7- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.4.4a"
+	   provider-name="Darkness">
+  <requires>
+  </requires><addon id="plugin.video.mando"
+	   name="Mando S"
+	   version="4.0.8"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -504,8 +527,18 @@ Initial release.
     <platform>all</platform>
   </extension>
 </addon>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 
-<!-- 5.7- Telemedia 2.0 -->
+<!-- 5.8- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="1.8.9a"
