@@ -775,7 +775,7 @@ is mkv.
 <!-- 6- Repositories B -->
 
 <!-- 6.1- Repository for 5Star Kodi addons -->
-<addon id="repository.5star" name="Repository for 5Star Kodi addons" version="1.0.8" provider-name="Luis Rodrigues">
+<addon id="repository.5star" name="Repository for 5Star Kodi addons" version="6.0.0" provider-name="Luis Rodrigues">
     <extension point="xbmc.addon.repository" name="Repository for 5Star Kodi addons">
         <info compressed="false">https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/5-star/repository.5star/master/addons/addons.xml.md5</checksum>
@@ -822,13 +822,16 @@ is mkv.
 </addon>
 
 <!-- 6.4- Fishenzon repo -->
-<addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.0" provider-name="Fishenzon">
+<addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml.md5</checksum>
 		<datadir zip="true">https://raw.githubusercontent.com/fishenzon/repo/master/zips</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 		<summary>Fishenzon Repo</summary>
 		<description>Fishenzon Repo</description>
 		<platform>all</platform>
@@ -906,6 +909,27 @@ is mkv.
 	</extension>
 </addon>
 
+<!-- 6.8- Rocks Repository -->
+<addon id="repository.Rockcrusher" name="[COLOR red]Rocks Repository[/COLOR]" version="2.4" provider-name="Rock">
+	<extension point="xbmc.addon.repository" name="[COLOR red]Rocks Repository[/COLOR]">
+        <info compressed="false">https://Rockodi.com/addons.xml</info>
+        <checksum>https://Rockodi.com/addons.xml.md5</checksum>
+        <datadir zip="true">https://Rockodi.com/</datadir>
+<dir>
+    <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+</dir>	
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Rocks Addons</summary>
+        <description>Rocks Repository</description>
+        <disclaimer lang="en">Author does not host or distribute any of the content displayed by this addon. Author does not have any affiliation with the content provider.
+        </disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <!-- 7- Repositories C -->
 
 <!-- 7.1- Alanon's Repo -->
@@ -939,7 +963,7 @@ is mkv.
 		- 1.0.2 Repo rework for Leia updates.</news>
 	</extension>
 </addon>
-	
+
 <!-- 7.2- Brian Hornsby's Repository -->
 <addon id="repository.brianhornsby" name="Brian Hornsby's Repository" version="1.0.0" provider-name="brianhornsby">
 	<extension point="xbmc.addon.repository" name="Brian Hornsby's Repository">
@@ -955,7 +979,48 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.3- CastagnaIT Repository for Kodi 18.x (LEIA) -->
+<!-- 7.3- Bugatsinho repository -->
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
+    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+        <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+        <hashes>false</hashes>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/python-koding/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Bugatsinho repository</summary>
+        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 7.4- CastagnaIT Repository for Kodi 18.x (LEIA) -->
 <addon id="repository.castagnait" name="CastagnaIT Repository for Kodi 18.x (LEIA)" version="1.0.1" provider-name="castagnait">
 	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
 		<dir>
@@ -974,7 +1039,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.4- ColdKeys Repo -->
+<!-- 7.5- ColdKeys Repo -->
 <addon id="repository.coldkeys" name="ColdKeys Repo" version="1.0.2" provider-name="Coldkeys">
 	<extension point="xbmc.addon.repository" name="ColdKeys Repository">
 		<info compressed="false">https://raw.githubusercontent.com/KodiColdkeys/coldkeys-addons/master/repository/addons.xml</info>
@@ -988,7 +1053,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.5- Dobbelina Repository -->
+<!-- 7.6- Dobbelina Repository -->
 <addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.2" provider-name="dobbelina">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
     <dir>
@@ -1007,7 +1072,22 @@ is mkv.
     </extension>
 </addon>
 
-<!-- 7.6- jafar Repo -->
+<!-- 7.7- FrenchDJ Repository -->
+<addon id="repository.frenchdj" name="frenchdj repository" version="0.0.2" provider-name="frenchdj">
+	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
+		<info compressed="false">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>frenchdj repository</summary>
+		<description>frenchdj addons repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 7.8- jafar Repo -->
 <addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
 	<extension point="xbmc.addon.repository" name="jafar">
 		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
@@ -1021,7 +1101,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.7- jSergio repo -->
+<!-- 7.9- jSergio repo -->
 <addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
 	<extension point="xbmc.addon.repository" name="jsergio repo">
         <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
@@ -1035,7 +1115,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.8- kodinerds.net Add-ons -->
+<!-- 7.10- kodinerds.net Add-ons -->
 <addon id="repository.kodinerds" name="kodinerds.net Add-ons" version="6.0.0" provider-name="L0RE">
 	<extension point="xbmc.addon.repository" name="L0RE">
 		<info compressed="true">https://raw.githubusercontent.com/kodinerds/repo/master/addons.xml</info>
@@ -1052,13 +1132,13 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.9- Marcelveldt's BETA repository -->
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+<!-- 7.11- Marcelveldt's BETA repository -->
+<addon id="repository.marcelveldt" version="1.0.2" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
 	
 	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
@@ -1067,7 +1147,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.10- mbebe Repository -->
+<!-- 7.12- mbebe Repository -->
 <addon id="repository.mbebe" name="mbebe" version="0.5" provider-name="mbebe">
 		<extension point="xbmc.addon.repository" name="mbebe">
 			<info compressed="false">https://raw.githubusercontent.com/mbebe/blomqvist/master/zips/addons.xml</info>
@@ -1090,7 +1170,7 @@ is mkv.
         </assets>			
 </addon>
 
-<!-- 7.11- Movix Repo -->
+<!-- 7.13- Movix Repo -->
 <addon id="repository.movix" name="[COLOR gold]Movix[/COLOR] [COLOR gold]Repo[/COLOR]" version="1.0.3" provider-name="Movix">
         <extension point="xbmc.addon.repository" name="Movix Repository">
                 <info compressed="false">http://raw.github.com/Movixme/Movix/master/addons.xml</info>
@@ -1105,7 +1185,7 @@ is mkv.
         </extension>
 </addon>
 
-<!-- 7.12- ResolveURL Repository -->
+<!-- 7.14- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -1128,7 +1208,7 @@ is mkv.
   </extension>
 </addon>
 
-<!-- 7.13- Sdarot.Tv Repository -->
+<!-- 7.15- Sdarot.Tv Repository -->
 <addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
         <extension point="xbmc.addon.repository" name="Sdarot Repository">
                 <info compressed="false">http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml</info>
@@ -1143,7 +1223,7 @@ is mkv.
         </extension>
 </addon>
 
-<!-- 7.14- TempTV Repo -->
+<!-- 7.16- TempTV Repo -->
 <addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml</info>
@@ -1157,7 +1237,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.15- The Crew Repository -->
+<!-- 7.17- The Crew Repository -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.1">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -1211,7 +1291,7 @@ is mkv.
 	</extension>
 </addon>
 
-<!-- 7.16- universalscrapers-repository -->
+<!-- 7.18- universalscrapers-repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
