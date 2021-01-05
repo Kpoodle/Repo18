@@ -903,6 +903,34 @@ Happy New Year From Team Cumination!
     <platform>all</platform>
   </extension>
 </addon>
+	
+<!-- 5.18- Vision of Destiny -->
+<addon id="plugin.video.wolfpack" name="Wolf Pack" version="8.1" provider-name="Team Wolf Pack">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio.alt"  />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+		<import addon="script.module.feedparser" version="5.1.3"/>
+        <import addon="script.module.resolveurl" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">All In One</summary>
+        <description lang="en"></description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <video_guide>https://www.youtube.com/watch?v=G9tGjc5_NCs</video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
 
 <!-- 6- Repositories B -->
 
@@ -1519,6 +1547,27 @@ Happy New Year From Team Cumination!
 </addon>
 
 <!-- 8.4- Ivue TV Guide -->
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2019.05.10.3" provider-name="aenema">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="1.0.0" />    		
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py"> 
+     <provides>video executable</provides> 
+  </extension> 
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+  </extension>
+</addon>
+
+<!-- 8.5- Ivue TV Guide -->
 <addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -1536,7 +1585,7 @@ Happy New Year From Team Cumination!
 	</extension>
 </addon>
 
-<!-- 8.5- mutagen (requires for MP3 Streams) -->
+<!-- 8.6- mutagen (requires for MP3 Streams) -->
 <addon id="script.module.mutagen"
        name="mutagen"
        provider-name="quodlibet"
@@ -1558,7 +1607,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 8.6- Kodi Cleaner -->
+<!-- 8.7- Kodi Cleaner -->
 <addon id="script.program.kodicleaner"
   name="Kodi Cleaner"
   version="10.3" 
@@ -1577,7 +1626,7 @@ Happy New Year From Team Cumination!
   </extension>
 </addon>
 
-<!-- 8.7- Skin Font -->
+<!-- 8.8- Skin Font -->
 <addon id="script.skinfont"
     name="Skin Font" version="1.0.2" provider-name="taxigps">
   <requires>
@@ -1596,7 +1645,7 @@ Happy New Year From Team Cumination!
   </extension>
 </addon>
 
-<!-- 8.8- SubsKeys (requires for All Subs Flash) -->
+<!-- 8.9- SubsKeys (requires for All Subs Flash) -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
