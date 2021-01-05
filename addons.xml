@@ -450,7 +450,7 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.2- Ghost -->
-<addon id="plugin.video.ghost" name="Ghost" version="5.0.4" provider-name="Ghost">
+<addon id="plugin.video.ghost" name="Ghost" version="5.0.5" provider-name="Ghost">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -757,9 +757,10 @@ FYI - our content is available only in Israel.
 <!-- 5.14- Ultimate Whitecream -->
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.2.40"
+       version="1.2.42"
        provider-name="Whitecream, holisticdioxide">
     <requires>
+	    <import addon="plugin.video.cumination" />
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.resolveurl" version="5.0.00"/>
         <import addon="script.module.resolveurl.xxx" version="2.0.01"/>
@@ -781,8 +782,12 @@ FYI - our content is available only in Israel.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.40[/B]
-Download ffmpeg issue resolved
+        <news>[B]Version 1.2.42[/B]
+Welcome to Cumination!
+Matrix and Leia compatible release
+Backup favorites from UWC can be imported.
+
+Happy New Year From Team Cumination!
 </news>
     </extension>
 </addon>
@@ -1559,7 +1564,7 @@ Download ffmpeg issue resolved
 <!-- 9- Service -->
 
 <!-- 9.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.2" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.6" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
