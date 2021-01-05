@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2.1" provider-name="Sdarot">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+        <!--<import addon="repository.sdarot" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
+        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
+        <description lang="en">KodiCat</description>
+        <description lang="he">KodiCat</description>
+        <news>[B]Version 2.6.0[/B][CR]Changes inside addon to fit site changes.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+</addon>
