@@ -449,7 +449,37 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.2- Ghost -->
+<!-- 5.2- Cumination -->
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.1">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
+        <import addon="script.module.websocket" version="0.50.0" />
+        <import addon="script.module.requests" optional="true" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en_GB">Cumination, the culmination of adult sites on Kodi</summary>
+        <description lang="en_GB">Cumination, the culmination of adult sites on Kodi</description>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered. Click on About from the contextmenu on each site to check for contact details.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+        <news>[B]Version 1.1.1 2021 Jan 2[/B]
+            Matrix and Leia compatible release
+        </news>
+    </extension>
+</addon>
+
+<!-- 5.3- Ghost -->
 <addon id="plugin.video.ghost" name="Ghost" version="5.0.5" provider-name="Ghost">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -477,7 +507,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.3- Ghost Porn -->
+<!-- 5.4- Ghost Porn -->
 <addon id="plugin.video.ghostporn" name="Ghost Porn" version="2.0.1" provider-name="Ghost">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -507,7 +537,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.4- Gridiron Legends -->
+<!-- 5.5- Gridiron Legends -->
 <addon id="plugin.video.gridironlegends" name="[COLOR gold]Gridiron Legends[/COLOR]" version="4.00.002" provider-name="Chief Osceola">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -529,7 +559,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.5- KaraokeTV -->
+<!-- 5.6- KaraokeTV -->
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -556,7 +586,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 	
-<!-- 5.6- KODI Popcorn Time -->
+<!-- 5.7- KODI Popcorn Time -->
 <addon id="plugin.video.kodipopcorntime" name="KODI Popcorn Time" version="1.7.6" provider-name="Markop159">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
@@ -596,7 +626,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.7- Mando -->
+<!-- 5.8- Mando -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.0.8"
@@ -614,7 +644,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.8- Movix -->
+<!-- 5.9- Movix -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.6"
@@ -637,7 +667,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.9- חינוכית נוסטלגיה -->
+<!-- 5.10- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -657,7 +687,33 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.10- Shadow -->
+<!-- 5.11- Sdarot.Tv -->
+<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2.1" provider-name="Sdarot">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+        <!--<import addon="repository.sdarot" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <minversion>31632</minversion>
+        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
+        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
+        <description lang="en">KodiCat</description>
+        <description lang="he">KodiCat</description>
+        <news>[B]Version 2.6.0[/B][CR]Changes inside addon to fit site changes.</news>
+        <supportedcontent>
+        <content>tvshows</content>
+        </supportedcontent>
+    </extension>
+</addon>
+
+<!-- 5.12- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.4.6a"
@@ -675,7 +731,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.11- SportHD -->
+<!-- 5.13- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.1" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -700,7 +756,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.12- Telemedia 2.0 -->
+<!-- 5.14- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="2.0.8"
@@ -722,7 +778,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.13- The Magic Dragon -->
+<!-- 5.15- The Magic Dragon -->
 <addon id="plugin.video.themagicdragon"
        name="The Magic Dragon"
        version="1.40"
@@ -754,7 +810,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.14- Ultimate Whitecream -->
+<!-- 5.16- Ultimate Whitecream -->
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
        version="1.2.42"
@@ -792,7 +848,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 5.15- Victory Show -->
+<!-- 5.17- Victory Show -->
 <addon id="plugin.video.victory_show" name="victory_show" version="1.0.0" provider-name="Victory Show">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -818,7 +874,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 5.16- Vision of Destiny -->
+<!-- 5.18- Vision of Destiny -->
 <addon id="plugin.video.vod"
 	   name="[COLORgrey]Vision of Destiny[/COLOR]"
 	   version="1.4.0"
