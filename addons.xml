@@ -476,7 +476,28 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.3- Ghost -->
+<!-- 5.3- Ember -->
+<addon id="plugin.video.ember"
+	   name="Ember"
+	   version="1.4.5"
+	   provider-name="EXDX">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.common.plugin.cache" version="2.5.5"/>	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Direct Gem</summary>
+    <description lang="he">Direct Gem</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- 5.4- Ghost -->
 <addon id="plugin.video.ghost" name="Ghost" version="5.0.5" provider-name="Ghost">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -504,7 +525,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.4- Ghost Porn -->
+<!-- 5.5- Ghost Porn -->
 <addon id="plugin.video.ghostporn" name="Ghost Porn" version="2.0.1" provider-name="Ghost">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -534,7 +555,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.5- Gridiron Legends -->
+<!-- 5.6- Gridiron Legends -->
 <addon id="plugin.video.gridironlegends" name="[COLOR gold]Gridiron Legends[/COLOR]" version="4.00.002" provider-name="Chief Osceola">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -556,7 +577,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.6- KaraokeTV -->
+<!-- 5.7- KaraokeTV -->
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
@@ -583,7 +604,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 	
-<!-- 5.7- KODI Popcorn Time -->
+<!-- 5.8- KODI Popcorn Time -->
 <addon id="plugin.video.kodipopcorntime" name="KODI Popcorn Time" version="1.7.6" provider-name="Markop159">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
@@ -623,7 +644,53 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.8- Mando -->
+<!-- 5.9- Live Streams Pro -->
+<addon id="plugin.video.live.streamspro"
+       name="LiveStreamsPro"
+       version="2.9.4"
+       provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.dateutil" optional="true" />
+    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.inputstreamhelper" optional="true"/>
+    <import addon="script.module.simplejson" />    
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
+    <description>
+        In addition to what livestreams allowed you to do, you can now,
+        1. call regex in regex,
+        2. multiple regex in page, regex in session, also htmlunescape responses
+        3. create session from one regex and pass onto next in line
+        4. save sessions to a file and open again later
+        5. write python code in .py file, put in the profile directory and then call from your regex.
+        6. use epoctime, guid and unpack as functions already defined.
+        7. Use it to post values to the pages to get the proper responses
+        8. support many headers, like origin, X-Requested-With
+        9. you can now append cookies in response and then read in regex using includeheaders
+        10. You can now link to another web url via your xml using externallink
+        11. support for google captcha, now you can show and then post the text
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- 5.10- Mando -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.3.1a"
@@ -641,7 +708,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.9- Movix -->
+<!-- 5.11- Movix -->
 <addon id="plugin.video.movixws"                                                                                                                                    
 	   name="Movix Live"                                                 
 	   version="1.5.6"
@@ -664,7 +731,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.10- חינוכית נוסטלגיה -->
+<!-- 5.12- חינוכית נוסטלגיה -->
 <addon id="plugin.video.nostalgia" name="[COLOR blue]חינוכית[/COLOR]-[COLOR white]נוסטלגיה[/COLOR]" version="2.1.4" provider-name="[COLOR gold]ToMeR[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -684,7 +751,25 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.11- Sdarot.Tv -->
+<!-- 5.13- חינוכית נוסטלגיה -->
+<addon id="plugin.video.optimus"
+	   name="Optimus"
+	   version="1.0.2a"
+	   provider-name="Darkness">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!-- 5.14- Sdarot.Tv -->
 <addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.2.1" provider-name="Sdarot">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -710,7 +795,7 @@ FYI - our content is available only in Israel.
     </extension>
 </addon>
 
-<!-- 5.12- Shadow -->
+<!-- 5.15- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
 	   version="2.4.7a"
@@ -728,7 +813,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.13- SportHD -->
+<!-- 5.16- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.6" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -753,7 +838,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.14- Telemedia 2.0 -->
+<!-- 5.17- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="2.0.8"
@@ -775,7 +860,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.15- The Magic Dragon -->
+<!-- 5.18- The Magic Dragon -->
 <addon id="plugin.video.themagicdragon"
        name="The Magic Dragon"
        version="1.40"
@@ -807,7 +892,7 @@ FYI - our content is available only in Israel.
   </extension>
 </addon>
 
-<!-- 5.16- Ultimate Whitecream -->
+<!-- 5.19- Ultimate Whitecream -->
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
        version="1.2.43"
@@ -840,7 +925,7 @@ Removed Cumination dependency
     </extension>
 </addon>
 
-<!-- 5.17- Victory Show -->
+<!-- 5.20- Victory Show -->
 <addon id="plugin.video.victory_show" name="victory_show" version="1.0.0" provider-name="Victory Show">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -866,7 +951,7 @@ Removed Cumination dependency
     </extension>
 </addon>
 
-<!-- 5.18- Vision of Destiny -->
+<!-- 5.21- Vision of Destiny -->
 <addon id="plugin.video.vod"
 	   name="[COLORgrey]Vision of Destiny[/COLOR]"
 	   version="1.4.0"
@@ -896,7 +981,7 @@ Removed Cumination dependency
   </extension>
 </addon>
 	
-<!-- 5.18- Vision of Destiny -->
+<!-- 5.22- Vision of Destiny -->
 <addon id="plugin.video.wolfpack" name="Wolf Pack" version="8.1" provider-name="Team Wolf Pack">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
