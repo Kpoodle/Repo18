@@ -626,7 +626,7 @@ FYI - our content is available only in Israel.
 <!-- 5.8- Mando -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
-	   version="4.0.8"
+	   version="4.3.1a"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -713,7 +713,7 @@ FYI - our content is available only in Israel.
 <!-- 5.12- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="2.4.6a"
+	   version="2.4.7a"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -1497,17 +1497,12 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </addon>
 
 <!-- 7.19- Wrestling Repository -->
-<addon id="repository.wod" name="Wrestling Repository" version="1.6" provider-name="WOD">
+<addon id="repository.wod" name="Wrestling Repository" version="1.8" provider-name="WOD">
 	<extension point="xbmc.addon.repository" name="Wrestling Repository">
 		<dir>
-			<info compressed="false">http://l3grthu.tk/styles/addons.xml</info>
-			<checksum>http://l3grthu.tk/styles/addons.xml.md5</checksum>
-			<datadir zip="true">http://l3grthu.tk/styles/</datadir>
-		</dir>
-		<dir>
-            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+			<info compressed="false">http://thundercat.cf/repos/wodrepo/addons.xml</info>
+			<checksum>http://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://thundercat.cf/repos/wodrepo/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1718,7 +1713,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <!-- 9- Service -->
 
 <!-- 9.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.6" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.6.a" provider-name="Sbs (With @burekas fixes)">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
