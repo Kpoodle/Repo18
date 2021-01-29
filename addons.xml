@@ -450,13 +450,13 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.2- Cumination -->
-<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.1">
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.4">
     <requires>
-        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.resolveurl" version="5.0.00" />
         <import addon="script.module.resolveurl.xxx" version="2.0.1" />
+        <import addon="script.common.plugin.cache" />
         <import addon="script.module.websocket" version="0.50.0" />
         <import addon="script.module.requests" optional="true" />
     </requires>
@@ -473,9 +473,6 @@ FYI - our content is available only in Israel.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.1.1 2021 Jan 2[/B]
-            Matrix and Leia compatible release
-        </news>
     </extension>
 </addon>
 
@@ -732,7 +729,7 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.13- SportHD -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.1" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.6" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -813,10 +810,9 @@ FYI - our content is available only in Israel.
 <!-- 5.16- Ultimate Whitecream -->
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.2.42"
+       version="1.2.43"
        provider-name="Whitecream, holisticdioxide">
     <requires>
-	    <import addon="plugin.video.cumination" />
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.resolveurl" version="5.0.00"/>
         <import addon="script.module.resolveurl.xxx" version="2.0.01"/>
@@ -838,12 +834,8 @@ FYI - our content is available only in Israel.
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.42[/B]
-Welcome to Cumination!
-Matrix and Leia compatible release
-Backup favorites from UWC can be imported.
-
-Happy New Year From Team Cumination!
+        <news>[B]Version 1.2.43[/B]
+Removed Cumination dependency
 </news>
     </extension>
 </addon>
@@ -948,7 +940,21 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 6.2- Chameleon TV Repository -->
+<!-- 6.2- Aenemapy Addons Repository -->
+<addon id="repository.aenemapy" name="Aenemapy Addons Repository" version="2018.01.04.2" provider-name="aenemapy">
+    <extension point="xbmc.addon.repository" name="Aenemapy Addons Repository">
+		<info compressed="false">https://raw.githubusercontent.com/aenemapy/aenemapyrepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/aenemapy/aenemapyrepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/aenemapy/aenemapyrepo/master/zips/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Aenemapy repo</summary>
+        <description>This is just a repo...</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 6.3- Chameleon TV Repository -->
 <addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
         <extension point="xbmc.addon.repository" name="CPTV">
                 <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
@@ -963,7 +969,7 @@ Happy New Year From Team Cumination!
         </extension>
 </addon>
 
-<!-- 6.3- EzzerMacs Wizard Repository -->
+<!-- 6.4- EzzerMacs Wizard Repository -->
 <addon id="repository.EzzerMacsWizard" name="EzzerMacs Wizard Repository" version="1.1.5" provider-name="EzzerMac">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -981,7 +987,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 6.4- Fishenzon repo -->
+<!-- 6.5- Fishenzon repo -->
 <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -998,7 +1004,7 @@ Happy New Year From Team Cumination!
 	</extension>
 </addon>
 
-<!-- 6.5- Poodle Add-ons Repository -->
+<!-- 6.6- Poodle Add-ons Repository -->
 <addon id="repository.Kpoodle" name="Poodle Add-ons Repository" version="1.0.0" provider-name="Kpoodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -1023,7 +1029,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 6.6- Poodle Wizard Repo -->
+<!-- 6.7- Poodle Wizard Repo -->
 <addon id="repository.PoodleWiz" name="Poodle Wizard Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -1048,7 +1054,7 @@ Happy New Year From Team Cumination!
     </extension>
 </addon>
 
-<!-- 6.7- Rising Tides Repository -->
+<!-- 6.8- Rising Tides Repository -->
 <addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="1.1" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
 	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
 	<dir>
@@ -1069,7 +1075,7 @@ Happy New Year From Team Cumination!
 	</extension>
 </addon>
 
-<!-- 6.8- Rocks Repository -->
+<!-- 6.9- Rocks Repository -->
 <addon id="repository.Rockcrusher" name="[COLOR red]Rocks Repository[/COLOR]" version="2.4" provider-name="Rock">
 	<extension point="xbmc.addon.repository" name="[COLOR red]Rocks Repository[/COLOR]">
         <info compressed="false">https://Rockodi.com/addons.xml</info>
