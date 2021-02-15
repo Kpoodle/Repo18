@@ -390,7 +390,7 @@ FYI - our content is available only in Israel.
 </addon>
 	
 <!-- 4.2- Service IL -->
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil[/COLOR]" version="1.2.0" provider-name="Kodi free">
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil[/COLOR]" version="1.2.1" provider-name="Kodi free">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -814,7 +814,7 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.16- SportHD -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.6" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.7" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -830,7 +830,7 @@ FYI - our content is available only in Israel.
 	  <language>EN</language>
     <license>GNU GPL, version 2</license>
     <twitter>https://twitter.com/Bugatsinho</twitter>
-    <news>-compatible with both Kodi version</news>
+    <news>-compatible with Kodi18.x - 19.x version</news>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
