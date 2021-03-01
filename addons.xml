@@ -1066,11 +1066,11 @@ Removed Cumination dependency
 </addon>
 
 <!-- 6.6- Poodle 18 Add-ons Repository -->
-<addon id="repository.Kpoodle" name="Poodle 18 Add-ons Repository" version="1.0.1" provider-name="Poodle">
+<addon id="repository.Kpoodle18" name="Poodle 18 Add-ons Repository" version="1.0.1" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
-    <extension point="xbmc.addon.repository" name="Poodle Add-ons Repository">
+    <extension point="xbmc.addon.repository" name="Poodle 18 Add-ons Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/Kpoodle/Repo18/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Kpoodle/Repo18/master/addons.xml.md5</checksum>
