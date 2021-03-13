@@ -5,9 +5,8 @@
 <!-- 0- Context -->
 
 <!-- 0.1- Elementum Context Helper -->
-<addon id="context.elementum" name="Elementum Context Helper" version="0.0.3" provider-name="elgatito">
+<addon id="context.elementum" name="Elementum Context Helper" version="0.0.4" provider-name="elgatito">
     <requires>
-        <import addon="xbmc.python" version="2.23.0"/>
         <import addon="script.module.requests"/>
         <import addon="plugin.video.elementum" optional="true"/>
     </requires>
@@ -1625,7 +1624,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- 8.3- Elementum Burst -->
-<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.55" provider-name="elgatito">
+<addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.62" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="plugin.video.elementum" optional="true"/>
