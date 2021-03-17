@@ -374,7 +374,7 @@ FYI - our content is available only in Israel.
 </addon>
 	
 <!-- 4.2- Service IL -->
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil[/COLOR]" version="1.2.1" provider-name="Kodi free">
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil[/COLOR]" version="1.2.2" provider-name="Kodi free">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -756,11 +756,12 @@ FYI - our content is available only in Israel.
 </addon>
 
 <!-- 5.15- Shadow -->
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.4.7a"
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.6.1"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -769,8 +770,14 @@ FYI - our content is available only in Israel.
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possible</description>
+	
     <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
+  
 </addon>
 
 <!-- 5.16- SportHD -->
