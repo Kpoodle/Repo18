@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.optimus"
 	   name="Optimus"
-	   version="1.0.2a"
+	   version="1.0.5"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -13,5 +13,9 @@
     <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possible</description>
     <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
